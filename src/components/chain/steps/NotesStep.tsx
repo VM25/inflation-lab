@@ -1,0 +1,101 @@
+"use client";
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Claim } from "@/components/chain/bits";
+import { ChainStep } from "@/components/chain/ChainStep";
+import { useDesk } from "@/components/DeskContext";
+import { fmtDate } from "@/lib/formatters/numberFormatters";
+
+const NOTES: { title: string; body: string }[] = [
+  {
+    title: "Data and reproducibility",
+    body: "All inputs are public FRED series: Treasury constant-maturity yields, TIPS real yields, breakeven inflation, and CPI, processed offline by a reproducible Python pipeline. The browser never prices bonds; interactive panels recombine precomputed per-instrument results, verified to match the pipeline within one cent.",
+  },
+  {
+    title: "Synthetic instruments",
+    body: "The six instruments are representative proxies built from the latest curve snapshot: coupons near par rounded to eighths, semiannual schedules, issued on coupon dates so accrued interest is zero. They are not CUSIP-level securities.",
+  },
+  {
+    title: "Pricing and analytics",
+    body: "Cash flows discount on a linearly interpolated curve with semiannual compounding. Duration, convexity and DV01 use standard discrete formulas, cross-checked against finite-difference repricing to within 0.5%. Key-rate durations bump one pillar by 1bp and reprice.",
+  },
+  {
+    title: "TIPS simplification",
+    body: "The TIPS-style sleeve reprices off the real curve only; index-ratio cash flows are not modeled. Each scenario declares how much of its nominal shock is a real-yield move, and the sleeve responds to that portion alone.",
+  },
+  {
+    title: "Scenarios and attribution",
+    body: "Stylized shocks are analytical stress tests, not forecasts; the 2022 replay is the one measured historical episode. Each scenario's real vs breakeven split is estimated per tenor from three years of daily TIPS and nominal yield co-movement (2Y borrows the 5Y estimate), except where the split is definitional. Attribution channels are additive and reconcile to exact repriced P&L, with the residual reported rather than absorbed.",
+  },
+  {
+    title: "Overlays, models and VaR",
+    body: "Overlays are rule-based weight transfers with no optimizer, leverage or shorts. Vasicek and CIR calibrate to month-end 3M Treasury yields, a market short-rate proxy rather than the instantaneous rate, via AR(1)-style regression; the curve mapping is tenor-scaled and excludes carry and roll-down. VaR and expected shortfall are model-conditioned rates-risk estimates, not forecasts or guaranteed bounds.",
+  },
+];
+
+export function NotesStep() {
+  const { manifest, snapshot } = useDesk();
+
+  return (
+    <ChainStep id="notes" kicker="Fine print" last>
+      <Claim>Data, assumptions, and limitations.</Claim>
+
+      <div className="panel mt-5 max-w-[820px]">
+        <Accordion type="single" collapsible className="px-4">
+          {NOTES.map((n, i) => (
+            <AccordionItem key={n.title} value={n.title}>
+              <AccordionTrigger className="py-3 font-[family-name:var(--font-label)] text-[13px] font-semibold text-ink hover:no-underline">
+                <span className="flex items-baseline gap-3">
+                  <span className="t-note w-[18px]">{String(i + 1).padStart(2, "0")}</span>
+                  {n.title}
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="max-w-[72ch] pb-4 text-[13px] leading-relaxed text-ink-2">
+                {n.body}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+          <AccordionItem value="manifest">
+            <AccordionTrigger className="py-3 font-[family-name:var(--font-label)] text-[13px] font-semibold text-ink hover:no-underline">
+              <span className="flex items-baseline gap-3">
+                <span className="t-note w-[18px]">07</span>
+                Data manifest
+              </span>
+            </AccordionTrigger>
+            <AccordionContent className="pb-4">
+              <p className="t-note mb-2">
+                rates {manifest.data_as_of.rates}, CPI {manifest.data_as_of.inflation}
+              </p>
+              <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2">
+                {manifest.files.map((f) => (
+                  <p key={f.file} className="flex items-baseline gap-2.5 py-0.5">
+                    <span className="t-data shrink-0 text-[10.5px] text-hedge">{f.file}</span>
+                    <span className="t-note truncate">{f.description}</span>
+                  </p>
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </div>
+
+      <footer className="mt-10 max-w-[820px] border-t border-rule pt-5">
+        <div className="flex flex-wrap items-baseline justify-between gap-3">
+          <p className="t-display text-[15px] text-ink">Rates Risk Engine</p>
+          <p className="t-note">data as of {fmtDate(snapshot.as_of_date)}</p>
+        </div>
+        <p className="t-note mt-2 max-w-[86ch] leading-relaxed">
+          All outputs are model-conditioned analytical estimates computed
+          offline from public market data under the stated assumptions. Not
+          investment advice, not a trading system, and not a production risk
+          platform.
+        </p>
+      </footer>
+    </ChainStep>
+  );
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "portfolio_id": "short_duration_defensive",
+    "name": "Short-Duration Defensive",
+    "description": "Lower-duration Treasury book built to reduce sensitivity to rate increases.",
+    "weights": {
+      "CASH": 0.2,
+      "UST_2Y": 0.45,
+      "UST_5Y": 0.25,
+      "UST_10Y": 0.1,
+      "UST_30Y": 0.0,
+      "TIPS_10Y": 0.0
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "name": "Intermediate Treasury Book",
+    "description": "Belly-weighted book with benchmark-like 5Y/10Y exposure.",
+    "weights": {
+      "CASH": 0.05,
+      "UST_2Y": 0.15,
+      "UST_5Y": 0.35,
+      "UST_10Y": 0.35,
+      "UST_30Y": 0.1,
+      "TIPS_10Y": 0.0
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "name": "Long-Duration Hedge Book",
+    "description": "The classic equity-hedge Treasury book: heavy 10Y/30Y duration. This is the book that inflation regimes break.",
+    "weights": {
+      "CASH": 0.05,
+      "UST_2Y": 0.05,
+      "UST_5Y": 0.15,
+      "UST_10Y": 0.35,
+      "UST_30Y": 0.4,
+      "TIPS_10Y": 0.0
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "name": "Inflation-Sensitive Treasury Book",
+    "description": "Shifts a meaningful sleeve into TIPS-style exposure to trade breakeven risk for real-rate risk.",
+    "weights": {
+      "CASH": 0.05,
+      "UST_2Y": 0.15,
+      "UST_5Y": 0.15,
+      "UST_10Y": 0.2,
+      "UST_30Y": 0.1,
+      "TIPS_10Y": 0.35
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "name": "Barbell Treasury Book",
+    "description": "Front-end plus long-end barbell: duration similar to a bullet, but key-rate exposure concentrated at the wings.",
+    "weights": {
+      "CASH": 0.05,
+      "UST_2Y": 0.4,
+      "UST_5Y": 0.0,
+      "UST_10Y": 0.1,
+      "UST_30Y": 0.45,
+      "TIPS_10Y": 0.0
+    }
+  }
+]

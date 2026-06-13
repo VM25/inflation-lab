@@ -1,0 +1,58 @@
+[
+  {
+    "overlay_id": "duration_reduction",
+    "name": "Duration Reduction Overlay",
+    "description": "Cuts long-duration exposure and rebuilds the front end; targets total DV01.",
+    "target_risk": "parallel_rate_increase",
+    "weight_adjustments": {
+      "CASH": 0.1,
+      "UST_2Y": 0.15,
+      "UST_5Y": 0.05,
+      "UST_10Y": -0.1,
+      "UST_30Y": -0.2,
+      "TIPS_10Y": 0.0
+    }
+  },
+  {
+    "overlay_id": "long_end_protection",
+    "name": "Long-End Protection Overlay",
+    "description": "Moves exposure out of 10Y/30Y into 2Y/5Y; targets long-end key-rate DV01.",
+    "target_risk": "bear_steepener_term_premium",
+    "weight_adjustments": {
+      "CASH": 0.0,
+      "UST_2Y": 0.1,
+      "UST_5Y": 0.15,
+      "UST_10Y": -0.05,
+      "UST_30Y": -0.2,
+      "TIPS_10Y": 0.0
+    }
+  },
+  {
+    "overlay_id": "inflation_sensitive",
+    "name": "Inflation-Sensitive Overlay",
+    "description": "Rotates nominal long-duration exposure into TIPS-style exposure; targets breakeven risk.",
+    "target_risk": "breakeven_inflation_shock",
+    "weight_adjustments": {
+      "CASH": 0.0,
+      "UST_2Y": 0.0,
+      "UST_5Y": 0.0,
+      "UST_10Y": -0.1,
+      "UST_30Y": -0.15,
+      "TIPS_10Y": 0.25
+    }
+  },
+  {
+    "overlay_id": "key_rate_neutralizer",
+    "name": "Key-Rate Neutralizer Overlay",
+    "description": "Shifts key-rate DV01 out of 10Y/30Y into 2Y/5Y with a milder total-DV01 cut than long-end protection.",
+    "target_risk": "concentrated_key_rate_exposure",
+    "weight_adjustments": {
+      "CASH": 0.0,
+      "UST_2Y": 0.15,
+      "UST_5Y": 0.1,
+      "UST_10Y": -0.1,
+      "UST_30Y": -0.15,
+      "TIPS_10Y": 0.0
+    }
+  }
+]

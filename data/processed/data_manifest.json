@@ -1,0 +1,77 @@
+{
+  "project": "Inflation Regime Rates Risk Engine",
+  "generated_at": "2026-06-12T17:54:48",
+  "data_as_of": {
+    "rates": "2026-06-11",
+    "inflation": "2026-05-01"
+  },
+  "files": [
+    {
+      "file": "market_snapshot.json",
+      "description": "Latest macro/rates snapshot for the dashboard header and regime panel."
+    },
+    {
+      "file": "yield_curve_history.csv",
+      "description": "Daily 2Y/5Y/10Y/30Y Treasury yields and curve slopes, 2015-present."
+    },
+    {
+      "file": "macro_regime_history.csv",
+      "description": "Monthly inflation, real-yield, breakeven and regime-label panel."
+    },
+    {
+      "file": "bond_analytics.csv",
+      "description": "Synthetic Treasury universe with price, duration, convexity, DV01 and key-rate durations."
+    },
+    {
+      "file": "portfolio_presets.json",
+      "description": "Controlled starting portfolios for the exposure builder."
+    },
+    {
+      "file": "scenario_definitions.json",
+      "description": "Deterministic curve-shock scenarios with real/breakeven decomposition."
+    },
+    {
+      "file": "scenario_results.json",
+      "description": "Scenario P&L, approximation comparison and attribution for every preset."
+    },
+    {
+      "file": "instrument_scenario_results.json",
+      "description": "Per-instrument scenario returns enabling controlled custom weights in the UI."
+    },
+    {
+      "file": "hedge_overlay_definitions.json",
+      "description": "Rule-based hedge overlay presets."
+    },
+    {
+      "file": "hedge_results.json",
+      "description": "Pre/post hedge metrics, effectiveness and residual loss for every combination."
+    },
+    {
+      "file": "stochastic_model_parameters.json",
+      "description": "Calibrated Vasicek and CIR parameters with Feller condition."
+    },
+    {
+      "file": "stochastic_paths_summary.json",
+      "description": "Summarized simulated short-rate paths and terminal distributions."
+    },
+    {
+      "file": "var_results.json",
+      "description": "Rates-specific VaR and Expected Shortfall by portfolio and model."
+    }
+  ],
+  "source_summary": [
+    "Public Treasury constant-maturity yield data (FRED)",
+    "Public real yield and breakeven inflation data (FRED)",
+    "Public CPI / core CPI index data (FRED)",
+    "Synthetic Treasury instruments built from the real curve snapshot"
+  ],
+  "limitations": [
+    "The site uses static offline-generated data; nothing is computed live.",
+    "Synthetic Treasury instruments are representative proxies, not CUSIP-level securities.",
+    "Scenario shocks are analytical stress tests, not forecasts.",
+    "TIPS-style exposure is a simplified real-yield proxy without index-ratio cash flows.",
+    "Vasicek and CIR are stylized short-rate models, not full term-structure models.",
+    "VaR is model-dependent and is not a guaranteed loss threshold.",
+    "Hedge overlays reduce selected exposures; they do not eliminate risk."
+  ]
+}

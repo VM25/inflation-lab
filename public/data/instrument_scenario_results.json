@@ -1,0 +1,1262 @@
+[
+  {
+    "scenario_id": "current_snapshot",
+    "instrument_id": "CASH",
+    "ret_exact": 0.0,
+    "ret_duration_only": -0.0,
+    "ret_convexity_adjusted": 0.0,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "scenario_id": "current_snapshot",
+    "instrument_id": "UST_2Y",
+    "ret_exact": 0.0,
+    "ret_duration_only": -0.0,
+    "ret_convexity_adjusted": 0.0,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "scenario_id": "current_snapshot",
+    "instrument_id": "UST_5Y",
+    "ret_exact": 0.0,
+    "ret_duration_only": -0.0,
+    "ret_convexity_adjusted": 0.0,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "scenario_id": "current_snapshot",
+    "instrument_id": "UST_10Y",
+    "ret_exact": 0.0,
+    "ret_duration_only": -0.0,
+    "ret_convexity_adjusted": 0.0,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.0,
+      "10Y": -0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "scenario_id": "current_snapshot",
+    "instrument_id": "UST_30Y",
+    "ret_exact": 0.0,
+    "ret_duration_only": -0.0,
+    "ret_convexity_adjusted": 0.0,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.0,
+      "10Y": -0.0,
+      "30Y": -0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "scenario_id": "current_snapshot",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": 0.0,
+    "ret_duration_only": -0.0,
+    "ret_convexity_adjusted": 0.0,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.0,
+      "10Y": -0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": -0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "scenario_id": "parallel_50",
+    "instrument_id": "CASH",
+    "ret_exact": -0.00122456,
+    "ret_duration_only": -0.00122681,
+    "ret_convexity_adjusted": -0.00122456,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.00122681,
+      "convexity": 2.26e-06,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -0.0
+    }
+  },
+  {
+    "scenario_id": "parallel_50",
+    "instrument_id": "UST_2Y",
+    "ret_exact": -0.00945923,
+    "ret_duration_only": -0.00951702,
+    "ret_convexity_adjusted": -0.0094593,
+    "key_rate_ret": {
+      "2Y": -0.00938061,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.00951702,
+      "convexity": 5.772e-05,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 7e-08
+    }
+  },
+  {
+    "scenario_id": "parallel_50",
+    "instrument_id": "UST_5Y",
+    "ret_exact": -0.02208135,
+    "ret_duration_only": -0.02237543,
+    "ret_convexity_adjusted": -0.02208329,
+    "key_rate_ret": {
+      "2Y": -0.00103958,
+      "5Y": -0.021186,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.02237543,
+      "convexity": 0.00029214,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 1.94e-06
+    }
+  },
+  {
+    "scenario_id": "parallel_50",
+    "instrument_id": "UST_10Y",
+    "ret_exact": -0.03896013,
+    "ret_duration_only": -0.0399652,
+    "ret_convexity_adjusted": -0.03901055,
+    "key_rate_ret": {
+      "2Y": -0.00112367,
+      "5Y": -0.00383601,
+      "10Y": -0.03476761,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0399652,
+      "convexity": 0.00095465,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 5.042e-05
+    }
+  },
+  {
+    "scenario_id": "parallel_50",
+    "instrument_id": "UST_30Y",
+    "ret_exact": -0.07293515,
+    "ret_duration_only": -0.07863382,
+    "ret_convexity_adjusted": -0.07411795,
+    "key_rate_ret": {
+      "2Y": -0.00121133,
+      "5Y": -0.00413529,
+      "10Y": -0.02096264,
+      "30Y": -0.05057579
+    },
+    "attribution_ret": {
+      "duration": -0.07863382,
+      "convexity": 0.00451587,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0011828
+    }
+  },
+  {
+    "scenario_id": "parallel_50",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": -0.03333835,
+    "ret_duration_only": -0.0337313,
+    "ret_convexity_adjusted": -0.0330941,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.00205468,
+      "10Y": -0.03190601,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.0006372,
+      "curve_shape": -0.00028015,
+      "real_rate": -0.0337313,
+      "breakeven": 0.0,
+      "residual": 3.591e-05
+    }
+  },
+  {
+    "scenario_id": "parallel_100",
+    "instrument_id": "CASH",
+    "ret_exact": -0.00244463,
+    "ret_duration_only": -0.00245363,
+    "ret_convexity_adjusted": -0.0024446,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.00245363,
+      "convexity": 9.03e-06,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -4e-08
+    }
+  },
+  {
+    "scenario_id": "parallel_100",
+    "instrument_id": "UST_2Y",
+    "ret_exact": -0.0188047,
+    "ret_duration_only": -0.01903405,
+    "ret_convexity_adjusted": -0.01880315,
+    "key_rate_ret": {
+      "2Y": -0.01876121,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.01903405,
+      "convexity": 0.0002309,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -1.55e-06
+    }
+  },
+  {
+    "scenario_id": "parallel_100",
+    "instrument_id": "UST_5Y",
+    "ret_exact": -0.0435952,
+    "ret_duration_only": -0.04475086,
+    "ret_convexity_adjusted": -0.04358229,
+    "key_rate_ret": {
+      "2Y": -0.00207916,
+      "5Y": -0.042372,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.04475086,
+      "convexity": 0.00116857,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -1.291e-05
+    }
+  },
+  {
+    "scenario_id": "parallel_100",
+    "instrument_id": "UST_10Y",
+    "ret_exact": -0.07611171,
+    "ret_duration_only": -0.0799304,
+    "ret_convexity_adjusted": -0.07611181,
+    "key_rate_ret": {
+      "2Y": -0.00224733,
+      "5Y": -0.00767203,
+      "10Y": -0.06953522,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0799304,
+      "convexity": 0.00381859,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 1e-07
+    }
+  },
+  {
+    "scenario_id": "parallel_100",
+    "instrument_id": "UST_30Y",
+    "ret_exact": -0.13818451,
+    "ret_duration_only": -0.15726764,
+    "ret_convexity_adjusted": -0.13920414,
+    "key_rate_ret": {
+      "2Y": -0.00242267,
+      "5Y": -0.00827058,
+      "10Y": -0.04192528,
+      "30Y": -0.10115158
+    },
+    "attribution_ret": {
+      "duration": -0.15726764,
+      "convexity": 0.01806349,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.00101964
+    }
+  },
+  {
+    "scenario_id": "parallel_100",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": -0.06543257,
+    "ret_duration_only": -0.0674626,
+    "ret_convexity_adjusted": -0.06491381,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.00410937,
+      "10Y": -0.06381202,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00254878,
+      "curve_shape": -0.00056031,
+      "real_rate": -0.0674626,
+      "breakeven": 0.0,
+      "residual": 4.155e-05
+    }
+  },
+  {
+    "scenario_id": "bear_steepener",
+    "instrument_id": "CASH",
+    "ret_exact": -0.00061284,
+    "ret_duration_only": -0.0016562,
+    "ret_convexity_adjusted": -0.00165208,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0016562,
+      "convexity": 4.11e-06,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.00103924
+    }
+  },
+  {
+    "scenario_id": "bear_steepener",
+    "instrument_id": "UST_2Y",
+    "ret_exact": -0.00474394,
+    "ret_duration_only": -0.01284798,
+    "ret_convexity_adjusted": -0.01274278,
+    "key_rate_ret": {
+      "2Y": -0.0046903,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.01284798,
+      "convexity": 0.0001052,
+      "curve_shape": 0.00797351,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 2.532e-05
+    }
+  },
+  {
+    "scenario_id": "bear_steepener",
+    "instrument_id": "UST_5Y",
+    "ret_exact": -0.02149914,
+    "ret_duration_only": -0.03020683,
+    "ret_convexity_adjusted": -0.0296744,
+    "key_rate_ret": {
+      "2Y": -0.00051979,
+      "5Y": -0.021186,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.03020683,
+      "convexity": 0.00053243,
+      "curve_shape": 0.00829874,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -0.00012349
+    }
+  },
+  {
+    "scenario_id": "bear_steepener",
+    "instrument_id": "UST_10Y",
+    "ret_exact": -0.06108313,
+    "ret_duration_only": -0.05395302,
+    "ret_convexity_adjusted": -0.05221318,
+    "key_rate_ret": {
+      "2Y": -0.00056183,
+      "5Y": -0.00383601,
+      "10Y": -0.05910494,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.05395302,
+      "convexity": 0.00173985,
+      "curve_shape": -0.00987094,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.00100099
+    }
+  },
+  {
+    "scenario_id": "bear_steepener",
+    "instrument_id": "UST_30Y",
+    "ret_exact": -0.13444056,
+    "ret_duration_only": -0.10615566,
+    "ret_convexity_adjusted": -0.09792548,
+    "key_rate_ret": {
+      "2Y": -0.00060567,
+      "5Y": -0.00413529,
+      "10Y": -0.03563648,
+      "30Y": -0.11126673
+    },
+    "attribution_ret": {
+      "duration": -0.10615566,
+      "convexity": 0.00823018,
+      "curve_shape": -0.04784936,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.01133428
+    }
+  },
+  {
+    "scenario_id": "bear_steepener",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": -0.05453693,
+    "ret_duration_only": -0.04590146,
+    "ret_convexity_adjusted": -0.04472152,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.00205468,
+      "10Y": -0.05424021,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00117994,
+      "curve_shape": -0.01046251,
+      "real_rate": -0.04590146,
+      "breakeven": 0.0,
+      "residual": 0.0006471
+    }
+  },
+  {
+    "scenario_id": "bull_flattener",
+    "instrument_id": "CASH",
+    "ret_exact": 0.00246269,
+    "ret_duration_only": 0.00144151,
+    "ret_convexity_adjusted": 0.00144462,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.0,
+      "10Y": -0.0,
+      "30Y": -0.0
+    },
+    "attribution_ret": {
+      "duration": 0.00144151,
+      "convexity": 3.12e-06,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.00101807
+    }
+  },
+  {
+    "scenario_id": "bull_flattener",
+    "instrument_id": "UST_2Y",
+    "ret_exact": 0.0192665,
+    "ret_duration_only": 0.0111825,
+    "ret_convexity_adjusted": 0.0112622,
+    "key_rate_ret": {
+      "2Y": 0.01876121,
+      "5Y": -0.0,
+      "10Y": -0.0,
+      "30Y": -0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0111825,
+      "convexity": 7.97e-05,
+      "curve_shape": 0.007739,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0002653
+    }
+  },
+  {
+    "scenario_id": "bull_flattener",
+    "instrument_id": "UST_5Y",
+    "ret_exact": 0.03482703,
+    "ret_duration_only": 0.02629113,
+    "ret_convexity_adjusted": 0.02669447,
+    "key_rate_ret": {
+      "2Y": 0.00207916,
+      "5Y": 0.031779,
+      "10Y": -0.0,
+      "30Y": -0.0
+    },
+    "attribution_ret": {
+      "duration": 0.02629113,
+      "convexity": 0.00040334,
+      "curve_shape": 0.00774311,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.00038945
+    }
+  },
+  {
+    "scenario_id": "bull_flattener",
+    "instrument_id": "UST_10Y",
+    "ret_exact": 0.03687203,
+    "ret_duration_only": 0.04695911,
+    "ret_convexity_adjusted": 0.04827712,
+    "key_rate_ret": {
+      "2Y": 0.00224733,
+      "5Y": 0.00575402,
+      "10Y": 0.02781409,
+      "30Y": -0.0
+    },
+    "attribution_ret": {
+      "duration": 0.04695911,
+      "convexity": 0.00131801,
+      "curve_shape": -0.01086412,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -0.00054096
+    }
+  },
+  {
+    "scenario_id": "bull_flattener",
+    "instrument_id": "UST_30Y",
+    "ret_exact": 0.04721896,
+    "ret_duration_only": 0.09239474,
+    "ret_convexity_adjusted": 0.09862947,
+    "key_rate_ret": {
+      "2Y": 0.00242267,
+      "5Y": 0.00620293,
+      "10Y": 0.01677011,
+      "30Y": 0.02023032
+    },
+    "attribution_ret": {
+      "duration": 0.09239474,
+      "convexity": 0.00623473,
+      "curve_shape": -0.04471391,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -0.0066966
+    }
+  },
+  {
+    "scenario_id": "bull_flattener",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": 0.02907211,
+    "ret_duration_only": 0.03928968,
+    "ret_convexity_adjusted": 0.04015418,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.00308202,
+      "10Y": 0.02552481,
+      "30Y": -0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.0008645,
+      "curve_shape": -0.01062372,
+      "real_rate": 0.03928968,
+      "breakeven": 0.0,
+      "residual": -0.00045835
+    }
+  },
+  {
+    "scenario_id": "front_end_repricing",
+    "instrument_id": "CASH",
+    "ret_exact": -0.00244463,
+    "ret_duration_only": -0.00128815,
+    "ret_convexity_adjusted": -0.00128566,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.00128815,
+      "convexity": 2.49e-06,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -0.00115897
+    }
+  },
+  {
+    "scenario_id": "front_end_repricing",
+    "instrument_id": "UST_2Y",
+    "ret_exact": -0.0188047,
+    "ret_duration_only": -0.00999288,
+    "ret_convexity_adjusted": -0.00992923,
+    "key_rate_ret": {
+      "2Y": -0.01876121,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.00999288,
+      "convexity": 6.364e-05,
+      "curve_shape": -0.00891158,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 3.611e-05
+    }
+  },
+  {
+    "scenario_id": "front_end_repricing",
+    "instrument_id": "UST_5Y",
+    "ret_exact": -0.03348325,
+    "ret_duration_only": -0.0234942,
+    "ret_convexity_adjusted": -0.02317211,
+    "key_rate_ret": {
+      "2Y": -0.00207916,
+      "5Y": -0.031779,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0234942,
+      "convexity": 0.00032209,
+      "curve_shape": -0.0105213,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.00021017
+    }
+  },
+  {
+    "scenario_id": "front_end_repricing",
+    "instrument_id": "UST_10Y",
+    "ret_exact": -0.02532434,
+    "ret_duration_only": -0.04196346,
+    "ret_convexity_adjusted": -0.04091096,
+    "key_rate_ret": {
+      "2Y": -0.00224733,
+      "5Y": -0.00575402,
+      "10Y": -0.0173838,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.04196346,
+      "convexity": 0.0010525,
+      "curve_shape": 0.0163285,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -0.00074187
+    }
+  },
+  {
+    "scenario_id": "front_end_repricing",
+    "instrument_id": "UST_30Y",
+    "ret_exact": -0.02908702,
+    "ret_duration_only": -0.08256551,
+    "ret_convexity_adjusted": -0.07758676,
+    "key_rate_ret": {
+      "2Y": -0.00242267,
+      "5Y": -0.00620293,
+      "10Y": -0.01048132,
+      "30Y": -0.01011516
+    },
+    "attribution_ret": {
+      "duration": -0.08256551,
+      "convexity": 0.00497875,
+      "curve_shape": 0.05150722,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -0.00300749
+    }
+  },
+  {
+    "scenario_id": "front_end_repricing",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": -0.018846,
+    "ret_duration_only": -0.03500883,
+    "ret_convexity_adjusted": -0.03432245,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.00308202,
+      "10Y": -0.015953,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00068638,
+      "curve_shape": 0.01592112,
+      "real_rate": -0.03500883,
+      "breakeven": 0.0,
+      "residual": -0.00044466
+    }
+  },
+  {
+    "scenario_id": "long_end_premium",
+    "instrument_id": "CASH",
+    "ret_exact": -0.00024527,
+    "ret_duration_only": -0.00144151,
+    "ret_convexity_adjusted": -0.00143839,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.00144151,
+      "convexity": 3.12e-06,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.00119312
+    }
+  },
+  {
+    "scenario_id": "long_end_premium",
+    "instrument_id": "UST_2Y",
+    "ret_exact": -0.00190103,
+    "ret_duration_only": -0.0111825,
+    "ret_convexity_adjusted": -0.01110281,
+    "key_rate_ret": {
+      "2Y": -0.00187612,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.0111825,
+      "convexity": 7.97e-05,
+      "curve_shape": 0.00914609,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 5.569e-05
+    }
+  },
+  {
+    "scenario_id": "long_end_premium",
+    "instrument_id": "UST_5Y",
+    "ret_exact": -0.01076105,
+    "ret_duration_only": -0.02629113,
+    "ret_convexity_adjusted": -0.02588779,
+    "key_rate_ret": {
+      "2Y": -0.00020792,
+      "5Y": -0.010593,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.02629113,
+      "convexity": 0.00040334,
+      "curve_shape": 0.01531414,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -0.0001874
+    }
+  },
+  {
+    "scenario_id": "long_end_premium",
+    "instrument_id": "UST_10Y",
+    "ret_exact": -0.05242249,
+    "ret_duration_only": -0.04695911,
+    "ret_convexity_adjusted": -0.0456411,
+    "key_rate_ret": {
+      "2Y": -0.00022473,
+      "5Y": -0.00191801,
+      "10Y": -0.05215141,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": -0.04695911,
+      "convexity": 0.00131801,
+      "curve_shape": -0.00761459,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0008332
+    }
+  },
+  {
+    "scenario_id": "long_end_premium",
+    "instrument_id": "UST_30Y",
+    "ret_exact": -0.1395236,
+    "ret_duration_only": -0.09239474,
+    "ret_convexity_adjusted": -0.08616001,
+    "key_rate_ret": {
+      "2Y": -0.00024227,
+      "5Y": -0.00206764,
+      "10Y": -0.03144396,
+      "30Y": -0.12643947
+    },
+    "attribution_ret": {
+      "duration": -0.09239474,
+      "convexity": 0.00623473,
+      "curve_shape": -0.06985341,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.01648982
+    }
+  },
+  {
+    "scenario_id": "long_end_premium",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": -0.04753197,
+    "ret_duration_only": -0.04014137,
+    "ret_convexity_adjusted": -0.03923898,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.00102734,
+      "10Y": -0.04785901,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00090238,
+      "curve_shape": -0.0088054,
+      "real_rate": -0.04014137,
+      "breakeven": 0.0,
+      "residual": 0.00051241
+    }
+  },
+  {
+    "scenario_id": "real_rate_shock",
+    "instrument_id": "CASH",
+    "ret_exact": -0.00122456,
+    "ret_duration_only": -0.00162553,
+    "ret_convexity_adjusted": -0.00162156,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 3.96e-06,
+      "curve_shape": 0.0,
+      "real_rate": -0.00162553,
+      "breakeven": -0.0,
+      "residual": 0.000397
+    }
+  },
+  {
+    "scenario_id": "real_rate_shock",
+    "instrument_id": "UST_2Y",
+    "ret_exact": -0.00945923,
+    "ret_duration_only": -0.01261006,
+    "ret_convexity_adjusted": -0.01250871,
+    "key_rate_ret": {
+      "2Y": -0.00938061,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00010134,
+      "curve_shape": 0.0030487,
+      "real_rate": -0.01261006,
+      "breakeven": -0.0,
+      "residual": 7.8e-07
+    }
+  },
+  {
+    "scenario_id": "real_rate_shock",
+    "instrument_id": "UST_5Y",
+    "ret_exact": -0.02824692,
+    "ret_duration_only": -0.02964745,
+    "ret_convexity_adjusted": -0.02913455,
+    "key_rate_ret": {
+      "2Y": -0.00103958,
+      "5Y": -0.0275418,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00051289,
+      "curve_shape": 0.00086751,
+      "real_rate": -0.02964745,
+      "breakeven": -0.0,
+      "residual": 2.011e-05
+    }
+  },
+  {
+    "scenario_id": "real_rate_shock",
+    "instrument_id": "UST_10Y",
+    "ret_exact": -0.05639786,
+    "ret_duration_only": -0.05295389,
+    "ret_convexity_adjusted": -0.05127789,
+    "key_rate_ret": {
+      "2Y": -0.00112367,
+      "5Y": -0.00498682,
+      "10Y": -0.05215141,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.001676,
+      "curve_shape": -0.00562324,
+      "real_rate": -0.05295389,
+      "breakeven": -0.0,
+      "residual": 0.00050327
+    }
+  },
+  {
+    "scenario_id": "real_rate_shock",
+    "instrument_id": "UST_30Y",
+    "ret_exact": -0.10499512,
+    "ret_duration_only": -0.10418981,
+    "ret_convexity_adjusted": -0.09626163,
+    "key_rate_ret": {
+      "2Y": -0.00121133,
+      "5Y": -0.00537588,
+      "10Y": -0.03144396,
+      "30Y": -0.07586368
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00792818,
+      "curve_shape": -0.01202216,
+      "real_rate": -0.10418981,
+      "breakeven": -0.0,
+      "residual": 0.00328867
+    }
+  },
+  {
+    "scenario_id": "real_rate_shock",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": -0.06417524,
+    "ret_duration_only": -0.05939398,
+    "ret_convexity_adjusted": -0.05741841,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.00360958,
+      "10Y": -0.06297238,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00197557,
+      "curve_shape": -0.00727736,
+      "real_rate": -0.05939398,
+      "breakeven": 0.0,
+      "residual": 0.00052054
+    }
+  },
+  {
+    "scenario_id": "breakeven_shock",
+    "instrument_id": "CASH",
+    "ret_exact": -0.00061284,
+    "ret_duration_only": -0.00073609,
+    "ret_convexity_adjusted": -0.00073528,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 8.1e-07,
+      "curve_shape": 0.0,
+      "real_rate": -0.0,
+      "breakeven": -0.00073609,
+      "residual": 0.00012243
+    }
+  },
+  {
+    "scenario_id": "breakeven_shock",
+    "instrument_id": "UST_2Y",
+    "ret_exact": -0.00474394,
+    "ret_duration_only": -0.00571021,
+    "ret_convexity_adjusted": -0.00568943,
+    "key_rate_ret": {
+      "2Y": -0.0046903,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 2.078e-05,
+      "curve_shape": 0.00093806,
+      "real_rate": -0.0,
+      "breakeven": -0.00571021,
+      "residual": 7.43e-06
+    }
+  },
+  {
+    "scenario_id": "breakeven_shock",
+    "instrument_id": "UST_5Y",
+    "ret_exact": -0.01736098,
+    "ret_duration_only": -0.01342526,
+    "ret_convexity_adjusted": -0.01332009,
+    "key_rate_ret": {
+      "2Y": -0.00051979,
+      "5Y": -0.0169488,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00010517,
+      "curve_shape": -0.00413324,
+      "real_rate": -0.0,
+      "breakeven": -0.01342526,
+      "residual": 9.234e-05
+    }
+  },
+  {
+    "scenario_id": "breakeven_shock",
+    "instrument_id": "UST_10Y",
+    "ret_exact": -0.02758875,
+    "ret_duration_only": -0.02397912,
+    "ret_convexity_adjusted": -0.02363545,
+    "key_rate_ret": {
+      "2Y": -0.00056183,
+      "5Y": -0.00306881,
+      "10Y": -0.02433733,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00034367,
+      "curve_shape": -0.0041316,
+      "real_rate": -0.0,
+      "breakeven": -0.02397912,
+      "residual": 0.00017829
+    }
+  },
+  {
+    "scenario_id": "breakeven_shock",
+    "instrument_id": "UST_30Y",
+    "ret_exact": -0.03797531,
+    "ret_duration_only": -0.04718029,
+    "ret_convexity_adjusted": -0.04555458,
+    "key_rate_ret": {
+      "2Y": -0.00060567,
+      "5Y": -0.00330823,
+      "10Y": -0.01467385,
+      "30Y": -0.02023032
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00162571,
+      "curve_shape": 0.00731297,
+      "real_rate": -0.0,
+      "breakeven": -0.04718029,
+      "residual": 0.0002663
+    }
+  },
+  {
+    "scenario_id": "breakeven_shock",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": 0.0,
+    "ret_duration_only": -0.0,
+    "ret_convexity_adjusted": 0.0,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.0,
+      "10Y": -0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": -0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "scenario_id": "replay_2022",
+    "instrument_id": "CASH",
+    "ret_exact": -0.00890886,
+    "ret_duration_only": -0.00664933,
+    "ret_convexity_adjusted": -0.00658301,
+    "key_rate_ret": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 6.632e-05,
+      "curve_shape": 0.0,
+      "real_rate": -0.00691331,
+      "breakeven": 0.00026398,
+      "residual": -0.00232586
+    }
+  },
+  {
+    "scenario_id": "replay_2022",
+    "instrument_id": "UST_2Y",
+    "ret_exact": -0.0670248,
+    "ret_duration_only": -0.05158227,
+    "ret_convexity_adjusted": -0.04988653,
+    "key_rate_ret": {
+      "2Y": -0.06904126,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00169574,
+      "curve_shape": -0.01819837,
+      "real_rate": -0.05363009,
+      "breakeven": 0.00204782,
+      "residual": 0.00106011
+    }
+  },
+  {
+    "scenario_id": "replay_2022",
+    "instrument_id": "UST_5Y",
+    "ret_exact": -0.11592395,
+    "ret_duration_only": -0.12127484,
+    "ret_convexity_adjusted": -0.1126927,
+    "key_rate_ret": {
+      "2Y": -0.00765132,
+      "5Y": -0.11567557,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.00858213,
+      "curve_shape": -0.00286423,
+      "real_rate": -0.12608945,
+      "breakeven": 0.00481461,
+      "residual": -0.00036702
+    }
+  },
+  {
+    "scenario_id": "replay_2022",
+    "instrument_id": "UST_10Y",
+    "ret_exact": -0.17423581,
+    "ret_duration_only": -0.21661139,
+    "ret_convexity_adjusted": -0.18856728,
+    "key_rate_ret": {
+      "2Y": -0.00827019,
+      "5Y": -0.02094463,
+      "10Y": -0.16410312,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.02804411,
+      "curve_shape": 0.02200397,
+      "real_rate": -0.22521086,
+      "breakeven": 0.00859947,
+      "residual": -0.0076725
+    }
+  },
+  {
+    "scenario_id": "replay_2022",
+    "instrument_id": "UST_30Y",
+    "ret_exact": -0.27366537,
+    "ret_duration_only": -0.4261953,
+    "ret_convexity_adjusted": -0.29353519,
+    "key_rate_ret": {
+      "2Y": -0.00891541,
+      "5Y": -0.02257868,
+      "10Y": -0.09894365,
+      "30Y": -0.20938376
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.13266011,
+      "curve_shape": 0.07689546,
+      "real_rate": -0.44311525,
+      "breakeven": 0.01691995,
+      "residual": -0.05702564
+    }
+  },
+  {
+    "scenario_id": "replay_2022",
+    "instrument_id": "TIPS_10Y",
+    "ret_exact": -0.20955719,
+    "ret_duration_only": -0.25259252,
+    "ret_convexity_adjusted": -0.2168613,
+    "key_rate_ret": {
+      "2Y": -0.0,
+      "5Y": -0.01815895,
+      "10Y": -0.21998353,
+      "30Y": 0.0
+    },
+    "attribution_ret": {
+      "duration": 0.0,
+      "convexity": 0.03573122,
+      "curve_shape": 0.01406991,
+      "real_rate": -0.25259252,
+      "breakeven": 0.0,
+      "residual": -0.0067658
+    }
+  }
+]

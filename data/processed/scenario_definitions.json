@@ -1,0 +1,274 @@
+[
+  {
+    "scenario_id": "current_snapshot",
+    "name": "Current Market Snapshot",
+    "scenario_type": "base",
+    "description": "No shock applied. The base curve is the latest data snapshot.",
+    "shocks_bps": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "real_shocks_bps": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "breakeven_shocks_bps": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "real_share_parallel": 0.0,
+    "macro_interpretation": "The reference state: today's curve, real yields, and breakevens.",
+    "split_basis": "definitional"
+  },
+  {
+    "scenario_id": "parallel_50",
+    "name": "Parallel +50 bps",
+    "scenario_type": "parallel",
+    "description": "All major curve points rise by 50 bps.",
+    "shocks_bps": {
+      "2Y": 50.0,
+      "5Y": 50.0,
+      "10Y": 50.0,
+      "30Y": 50.0
+    },
+    "real_shocks_bps": {
+      "2Y": 37.0,
+      "5Y": 37.0,
+      "10Y": 38.0,
+      "30Y": 38.5
+    },
+    "breakeven_shocks_bps": {
+      "2Y": 13.0,
+      "5Y": 13.0,
+      "10Y": 12.0,
+      "30Y": 11.5
+    },
+    "real_share_parallel": 0.7525,
+    "macro_interpretation": "Tests baseline duration sensitivity under a uniform rate increase.",
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-06-12 to 2026-06-11; 2Y borrows the 5Y beta"
+  },
+  {
+    "scenario_id": "parallel_100",
+    "name": "Parallel +100 bps",
+    "scenario_type": "parallel",
+    "description": "All major curve points rise by 100 bps.",
+    "shocks_bps": {
+      "2Y": 100.0,
+      "5Y": 100.0,
+      "10Y": 100.0,
+      "30Y": 100.0
+    },
+    "real_shocks_bps": {
+      "2Y": 74.0,
+      "5Y": 74.0,
+      "10Y": 76.0,
+      "30Y": 77.0
+    },
+    "breakeven_shocks_bps": {
+      "2Y": 26.0,
+      "5Y": 26.0,
+      "10Y": 24.0,
+      "30Y": 23.0
+    },
+    "real_share_parallel": 0.7525,
+    "macro_interpretation": "A larger uniform shock that exposes convexity and approximation error.",
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-06-12 to 2026-06-11; 2Y borrows the 5Y beta"
+  },
+  {
+    "scenario_id": "bear_steepener",
+    "name": "Bear Steepener",
+    "scenario_type": "steepener",
+    "description": "Long-end yields rise more than front-end yields.",
+    "shocks_bps": {
+      "2Y": 25.0,
+      "5Y": 50.0,
+      "10Y": 85.0,
+      "30Y": 110.0
+    },
+    "real_shocks_bps": {
+      "2Y": 18.5,
+      "5Y": 37.0,
+      "10Y": 64.6,
+      "30Y": 84.7
+    },
+    "breakeven_shocks_bps": {
+      "2Y": 6.5,
+      "5Y": 13.0,
+      "10Y": 20.4,
+      "30Y": 25.3
+    },
+    "real_share_parallel": 0.7585,
+    "macro_interpretation": "Punishes 10Y/30Y key-rate exposure; total duration alone understates the risk.",
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-06-12 to 2026-06-11; 2Y borrows the 5Y beta"
+  },
+  {
+    "scenario_id": "bull_flattener",
+    "name": "Bull Flattener",
+    "scenario_type": "flattener",
+    "description": "Front-end yields fall more than long-end yields.",
+    "shocks_bps": {
+      "2Y": -100.0,
+      "5Y": -75.0,
+      "10Y": -40.0,
+      "30Y": -20.0
+    },
+    "real_shocks_bps": {
+      "2Y": -74.0,
+      "5Y": -55.5,
+      "10Y": -30.4,
+      "30Y": -15.4
+    },
+    "breakeven_shocks_bps": {
+      "2Y": -26.0,
+      "5Y": -19.5,
+      "10Y": -9.6,
+      "30Y": -4.6
+    },
+    "real_share_parallel": 0.746,
+    "macro_interpretation": "A rally led by policy-rate repricing; front-end exposure gains most.",
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-06-12 to 2026-06-11; 2Y borrows the 5Y beta"
+  },
+  {
+    "scenario_id": "front_end_repricing",
+    "name": "Front-End Repricing",
+    "scenario_type": "front_end",
+    "description": "2Y/5Y yields move materially as the policy path reprices.",
+    "shocks_bps": {
+      "2Y": 100.0,
+      "5Y": 75.0,
+      "10Y": 25.0,
+      "30Y": 10.0
+    },
+    "real_shocks_bps": {
+      "2Y": 74.0,
+      "5Y": 55.5,
+      "10Y": 19.0,
+      "30Y": 7.7
+    },
+    "breakeven_shocks_bps": {
+      "2Y": 26.0,
+      "5Y": 19.5,
+      "10Y": 6.0,
+      "30Y": 2.3
+    },
+    "real_share_parallel": 0.7438,
+    "macro_interpretation": "Tests short/intermediate books; long-duration books are less affected.",
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-06-12 to 2026-06-11; 2Y borrows the 5Y beta"
+  },
+  {
+    "scenario_id": "long_end_premium",
+    "name": "Long-End Term Premium Shock",
+    "scenario_type": "term_premium",
+    "description": "10Y/30Y yields rise disproportionately as term premium rebuilds.",
+    "shocks_bps": {
+      "2Y": 10.0,
+      "5Y": 25.0,
+      "10Y": 75.0,
+      "30Y": 125.0
+    },
+    "real_shocks_bps": {
+      "2Y": 7.4,
+      "5Y": 18.5,
+      "10Y": 57.0,
+      "30Y": 96.2
+    },
+    "breakeven_shocks_bps": {
+      "2Y": 2.6,
+      "5Y": 6.5,
+      "10Y": 18.0,
+      "30Y": 28.8
+    },
+    "real_share_parallel": 0.7621,
+    "macro_interpretation": "Concentrated long-end losses with visible convexity effects.",
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-06-12 to 2026-06-11; 2Y borrows the 5Y beta"
+  },
+  {
+    "scenario_id": "real_rate_shock",
+    "name": "Real-Rate Shock",
+    "scenario_type": "real_rate",
+    "description": "Real yields rise across the curve; breakevens are stable.",
+    "shocks_bps": {
+      "2Y": 50.0,
+      "5Y": 65.0,
+      "10Y": 75.0,
+      "30Y": 75.0
+    },
+    "real_shocks_bps": {
+      "2Y": 50.0,
+      "5Y": 65.0,
+      "10Y": 75.0,
+      "30Y": 75.0
+    },
+    "breakeven_shocks_bps": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "real_share_parallel": 1.0,
+    "macro_interpretation": "Both nominal Treasuries and TIPS-style exposure lose; TIPS do not hedge real-rate repricing.",
+    "split_basis": "definitional: a pure real-yield move"
+  },
+  {
+    "scenario_id": "breakeven_shock",
+    "name": "Breakeven Inflation Shock",
+    "scenario_type": "breakeven",
+    "description": "Inflation compensation widens; real yields are stable.",
+    "shocks_bps": {
+      "2Y": 25.0,
+      "5Y": 40.0,
+      "10Y": 35.0,
+      "30Y": 20.0
+    },
+    "real_shocks_bps": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "breakeven_shocks_bps": {
+      "2Y": 25.0,
+      "5Y": 40.0,
+      "10Y": 35.0,
+      "30Y": 20.0
+    },
+    "real_share_parallel": 0.0,
+    "macro_interpretation": "Nominal Treasuries lose; TIPS-style exposure is insulated, the inflation-hedge case.",
+    "split_basis": "definitional: a pure breakeven move"
+  },
+  {
+    "scenario_id": "replay_2022",
+    "name": "2022 Inflation Replay",
+    "scenario_type": "historical",
+    "description": "Measured Treasury curve shift over 2021-12-31 to 2022-12-30.",
+    "shocks_bps": {
+      "2Y": 368.0,
+      "5Y": 273.0,
+      "10Y": 236.0,
+      "30Y": 207.0
+    },
+    "real_shocks_bps": {
+      "2Y": 327.0,
+      "5Y": 327.0,
+      "10Y": 262.0,
+      "30Y": 211.0
+    },
+    "breakeven_shocks_bps": {
+      "2Y": 41.0,
+      "5Y": -54.0,
+      "10Y": -26.0,
+      "30Y": -4.0
+    },
+    "real_share_parallel": 1.0397,
+    "macro_interpretation": "The 2022 episode: an inflation regime where real-yield repricing drove historic Treasury losses and broke the stock-bond hedge.",
+    "historical_window": "2021-12-31 to 2022-12-30",
+    "is_measured_historical": true,
+    "split_basis": "measured DFII changes over the same window; 2Y borrows the 5Y change"
+  }
+]

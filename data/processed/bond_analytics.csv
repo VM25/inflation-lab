@@ -1,0 +1,7 @@
+instrument_id,name,sleeve,type,maturity_years,coupon_rate,face_value,coupon_frequency,curve_tenor,is_tips_style,base_yield,base_price,duration_macaulay,duration_modified,convexity,dv01_per_100_face,krd_2y,krd_5y,krd_10y,krd_30y
+CASH,Cash / Ultra-Short Bill,cash,cash,0.25,0.0,100.0,1,3M,False,0.0378,99.0682,0.25,0.2454,0.1806,0.002431,-0.0,-0.0,-0.0,-0.0
+UST_2Y,2Y Treasury Proxy,short_treasury,nominal,2.0,0.04,100.0,2,2Y,False,0.040462,99.9121,1.9419,1.9034,4.618,0.019017,1.8761,-0.0,-0.0,-0.0
+UST_5Y,5Y Treasury Proxy,intermediate_treasury,nominal,5.0,0.04125,100.0,2,5Y,False,0.041715,99.7922,4.5684,4.4751,23.3715,0.044658,0.2079,4.2372,-0.0,-0.0
+UST_10Y,10Y Treasury Proxy,long_intermediate_treasury,nominal,10.0,0.045,100.0,2,10Y,False,0.044105,100.7177,8.1693,7.993,76.3718,0.080504,0.2247,0.7672,6.9535,-0.0
+UST_30Y,30Y Treasury Proxy,long_treasury,nominal,30.0,0.05,100.0,2,30Y,False,0.047602,103.8096,16.1011,15.7268,361.2699,0.163259,0.2423,0.8271,4.1925,10.1152
+TIPS_10Y,10Y TIPS-Style Proxy,tips_style,real,10.0,0.02125,100.0,2,10Y,True,0.021366,99.896,9.0609,8.9651,90.0223,0.089558,0.0,0.5553,8.3963,-0.0

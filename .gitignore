@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# local tooling (not part of the project)
+.claude/
+.agents/
+skills-lock.json
+
+# private / internal material (course references, planning specs)
+references/
+docs/
+
+# misc
+.DS_Store
+*.log
+.env*

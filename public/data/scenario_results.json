@@ -1,0 +1,1702 @@
+[
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "current_snapshot",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": 0.0,
+    "pnl_convexity_adjusted": 0.0,
+    "pnl_exact": 0.0,
+    "loss_pct": 0.0,
+    "approximation_error_duration": 0.0,
+    "approximation_error_convexity": 0.0,
+    "key_rate_pnl": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "parallel_50",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": -14118.4,
+    "pnl_convexity_adjusted": -13923.47,
+    "pnl_exact": -13917.92,
+    "loss_pct": -0.013918,
+    "approximation_error_duration": -200.48,
+    "approximation_error_convexity": -5.56,
+    "key_rate_pnl": {
+      "2Y": -4593.53,
+      "5Y": -5680.1,
+      "10Y": -3476.76,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": -14118.4,
+      "convexity": 194.93,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 5.56
+    }
+  },
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "parallel_100",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": -28236.8,
+    "pnl_convexity_adjusted": -27457.09,
+    "pnl_exact": -27461.01,
+    "loss_pct": -0.027461,
+    "approximation_error_duration": -775.79,
+    "approximation_error_convexity": 3.92,
+    "key_rate_pnl": {
+      "2Y": -9187.07,
+      "5Y": -11360.2,
+      "10Y": -6953.52,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": -28236.8,
+      "convexity": 779.71,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -3.92
+    }
+  },
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "bear_steepener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": -19059.84,
+    "pnl_convexity_adjusted": -18704.58,
+    "pnl_exact": -13740.44,
+    "loss_pct": -0.01374,
+    "approximation_error_duration": -5319.4,
+    "approximation_error_convexity": -4964.14,
+    "key_rate_pnl": {
+      "2Y": -2296.77,
+      "5Y": -5680.1,
+      "10Y": -5910.49,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": -19059.84,
+      "convexity": 355.26,
+      "curve_shape": 4675.67,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 288.47
+    }
+  },
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "bull_flattener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": 16589.12,
+    "pnl_convexity_adjusted": 16858.24,
+    "pnl_exact": 21556.42,
+    "loss_pct": 0.021556,
+    "approximation_error_duration": -4967.3,
+    "approximation_error_convexity": -4698.18,
+    "key_rate_pnl": {
+      "2Y": 9187.07,
+      "5Y": 8520.15,
+      "10Y": 2781.41,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": 16589.12,
+      "convexity": 269.12,
+      "curve_shape": 4331.91,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 366.27
+    }
+  },
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "front_end_repricing",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": -14824.32,
+    "pnl_convexity_adjusted": -14609.41,
+    "pnl_exact": -19854.29,
+    "loss_pct": -0.019854,
+    "approximation_error_duration": 5029.96,
+    "approximation_error_convexity": 5244.87,
+    "key_rate_pnl": {
+      "2Y": -9187.07,
+      "5Y": -8520.15,
+      "10Y": -1738.38,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": -14824.32,
+      "convexity": 214.91,
+      "curve_shape": -5007.69,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -237.19
+    }
+  },
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "long_end_premium",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": -16589.12,
+    "pnl_convexity_adjusted": -16320.0,
+    "pnl_exact": -8837.03,
+    "loss_pct": -0.008837,
+    "approximation_error_duration": -7752.09,
+    "approximation_error_convexity": -7482.97,
+    "key_rate_pnl": {
+      "2Y": -918.71,
+      "5Y": -2840.05,
+      "10Y": -5215.14,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": -16589.12,
+      "convexity": 269.12,
+      "curve_shape": 7182.82,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 300.15
+    }
+  },
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "real_rate_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": -18706.88,
+    "pnl_convexity_adjusted": -18364.66,
+    "pnl_exact": -17203.08,
+    "loss_pct": -0.017203,
+    "approximation_error_duration": -1503.8,
+    "approximation_error_convexity": -1161.58,
+    "key_rate_pnl": {
+      "2Y": -4593.53,
+      "5Y": -7384.13,
+      "10Y": -5215.14,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 342.22,
+      "curve_shape": 1026.47,
+      "real_rate": -18706.88,
+      "breakeven": 0.0,
+      "residual": 135.11
+    }
+  },
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "breakeven_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": -8471.04,
+    "pnl_convexity_adjusted": -8400.87,
+    "pnl_exact": -9356.46,
+    "loss_pct": -0.009356,
+    "approximation_error_duration": 885.42,
+    "approximation_error_convexity": 955.6,
+    "key_rate_pnl": {
+      "2Y": -2296.77,
+      "5Y": -4544.08,
+      "10Y": -2433.73,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 70.17,
+      "curve_shape": -1024.34,
+      "real_rate": 0.0,
+      "breakeven": -8471.04,
+      "residual": 68.75
+    }
+  },
+  {
+    "portfolio_id": "short_duration_defensive",
+    "scenario_id": "replay_2022",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 2.8237,
+    "convexity": 15.5943,
+    "dv01": 282.37,
+    "key_rate_dv01": {
+      "2Y": 91.87,
+      "5Y": 113.6,
+      "10Y": 69.54,
+      "30Y": 0.0
+    },
+    "pnl_duration_only": -76521.73,
+    "pnl_convexity_adjusted": -70795.45,
+    "pnl_exact": -78347.5,
+    "loss_pct": -0.078348,
+    "approximation_error_duration": 1825.77,
+    "approximation_error_convexity": 7552.06,
+    "key_rate_pnl": {
+      "2Y": -33808.41,
+      "5Y": -31013.36,
+      "10Y": -16410.31,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 5726.29,
+      "curve_shape": -6704.93,
+      "real_rate": -79559.65,
+      "breakeven": 3037.91,
+      "residual": -847.13
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "current_snapshot",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": 0.0,
+    "pnl_convexity_adjusted": 0.0,
+    "pnl_exact": 0.0,
+    "loss_pct": 0.0,
+    "approximation_error_duration": 0.0,
+    "approximation_error_convexity": 0.0,
+    "key_rate_pnl": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "parallel_50",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -31171.5,
+    "pnl_convexity_adjusted": -30274.76,
+    "pnl_exact": -30138.15,
+    "loss_pct": -0.030138,
+    "approximation_error_duration": -1033.35,
+    "approximation_error_convexity": -136.62,
+    "key_rate_pnl": {
+      "2Y": -2285.36,
+      "5Y": -9171.23,
+      "10Y": -14264.93,
+      "30Y": -5057.58
+    },
+    "attribution": {
+      "duration": -31171.5,
+      "convexity": 896.74,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 136.62
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "parallel_100",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -62342.99,
+    "pnl_convexity_adjusted": -58756.05,
+    "pnl_exact": -58658.81,
+    "loss_pct": -0.058659,
+    "approximation_error_duration": -3684.19,
+    "approximation_error_convexity": -97.25,
+    "key_rate_pnl": {
+      "2Y": -4570.72,
+      "5Y": -18342.47,
+      "10Y": -28529.85,
+      "30Y": -10115.16
+    },
+    "attribution": {
+      "duration": -62342.99,
+      "convexity": 3586.94,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 97.25
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "bear_steepener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -42081.52,
+    "pnl_convexity_adjusted": -40447.22,
+    "pnl_exact": -43090.08,
+    "loss_pct": -0.04309,
+    "approximation_error_duration": 1008.56,
+    "approximation_error_convexity": 2642.86,
+    "key_rate_pnl": {
+      "2Y": -1142.68,
+      "5Y": -9171.23,
+      "10Y": -24250.38,
+      "30Y": -11126.67
+    },
+    "attribution": {
+      "duration": -42081.52,
+      "convexity": 1634.3,
+      "curve_shape": -4139.18,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 1496.31
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "bull_flattener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": 36626.51,
+    "pnl_convexity_adjusted": 37864.56,
+    "pnl_exact": 32829.68,
+    "loss_pct": 0.03283,
+    "approximation_error_duration": 3796.83,
+    "approximation_error_convexity": 5034.89,
+    "key_rate_pnl": {
+      "2Y": 4570.72,
+      "5Y": 13756.85,
+      "10Y": 11411.94,
+      "30Y": 2023.03
+    },
+    "attribution": {
+      "duration": 36626.51,
+      "convexity": 1238.06,
+      "curve_shape": -4402.9,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -631.99
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "front_end_repricing",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -32730.07,
+    "pnl_convexity_adjusted": -31741.42,
+    "pnl_exact": -26434.29,
+    "loss_pct": -0.026434,
+    "approximation_error_duration": -6295.78,
+    "approximation_error_convexity": -5307.13,
+    "key_rate_pnl": {
+      "2Y": -4570.72,
+      "5Y": -13756.85,
+      "10Y": -7132.46,
+      "30Y": -1011.52
+    },
+    "attribution": {
+      "duration": -32730.07,
+      "convexity": 988.65,
+      "curve_shape": 5846.5,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -539.38
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "long_end_premium",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -36626.51,
+    "pnl_convexity_adjusted": -35388.45,
+    "pnl_exact": -36364.02,
+    "loss_pct": -0.036364,
+    "approximation_error_duration": -262.49,
+    "approximation_error_convexity": 975.56,
+    "key_rate_pnl": {
+      "2Y": -457.07,
+      "5Y": -4585.62,
+      "10Y": -21397.39,
+      "30Y": -12643.95
+    },
+    "attribution": {
+      "duration": -36626.51,
+      "convexity": 1238.06,
+      "curve_shape": -2918.58,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 1943.02
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "real_rate_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -41302.23,
+    "pnl_convexity_adjusted": -39727.9,
+    "pnl_exact": -41605.3,
+    "loss_pct": -0.041605,
+    "approximation_error_duration": 303.07,
+    "approximation_error_convexity": 1877.4,
+    "key_rate_pnl": {
+      "2Y": -2285.36,
+      "5Y": -11922.6,
+      "10Y": -21397.39,
+      "30Y": -7586.37
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 1574.33,
+      "curve_shape": -2409.42,
+      "real_rate": -41302.23,
+      "breakeven": 0.0,
+      "residual": 532.02
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "breakeven_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -18702.9,
+    "pnl_convexity_adjusted": -18380.07,
+    "pnl_exact": -20272.17,
+    "loss_pct": -0.020272,
+    "approximation_error_duration": 1569.27,
+    "approximation_error_convexity": 1892.1,
+    "key_rate_pnl": {
+      "2Y": -1142.68,
+      "5Y": -7336.99,
+      "10Y": -9985.45,
+      "30Y": -2023.03
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 322.82,
+      "curve_shape": -2020.69,
+      "real_rate": 0.0,
+      "breakeven": -18702.9,
+      "residual": 128.59
+    }
+  },
+  {
+    "portfolio_id": "intermediate_treasury_book",
+    "scenario_id": "replay_2022",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 6.2343,
+    "convexity": 71.7389,
+    "dv01": 623.43,
+    "key_rate_dv01": {
+      "2Y": 45.71,
+      "5Y": 183.42,
+      "10Y": 285.3,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -168949.51,
+    "pnl_convexity_adjusted": -142606.64,
+    "pnl_exact": -139421.62,
+    "loss_pct": -0.139422,
+    "approximation_error_duration": -29527.9,
+    "approximation_error_convexity": -3185.03,
+    "key_rate_pnl": {
+      "2Y": -16820.26,
+      "5Y": -50074.94,
+      "10Y": -67330.46,
+      "30Y": -20938.38
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 26342.87,
+      "curve_shape": 11658.7,
+      "real_rate": -175656.81,
+      "breakeven": 6707.3,
+      "residual": -8473.67
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "current_snapshot",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": 0.0,
+    "pnl_convexity_adjusted": 0.0,
+    "pnl_exact": 0.0,
+    "loss_pct": 0.0,
+    "approximation_error_duration": 0.0,
+    "approximation_error_convexity": 0.0,
+    "key_rate_pnl": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "parallel_50",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": -49334.85,
+    "pnl_convexity_adjusted": -47147.56,
+    "pnl_exact": -46656.5,
+    "loss_pct": -0.046656,
+    "approximation_error_duration": -2678.36,
+    "approximation_error_convexity": -491.06,
+    "key_rate_pnl": {
+      "2Y": -1502.78,
+      "5Y": -6174.62,
+      "10Y": -20553.72,
+      "30Y": -20230.32
+    },
+    "attribution": {
+      "duration": -49334.85,
+      "convexity": 2187.3,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 491.06
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "parallel_100",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": -98669.71,
+    "pnl_convexity_adjusted": -89920.52,
+    "pnl_exact": -89514.65,
+    "loss_pct": -0.089515,
+    "approximation_error_duration": -9155.06,
+    "approximation_error_convexity": -405.87,
+    "key_rate_pnl": {
+      "2Y": -3005.57,
+      "5Y": -12349.24,
+      "10Y": -41107.44,
+      "30Y": -40460.63
+    },
+    "attribution": {
+      "duration": -98669.71,
+      "convexity": 8749.19,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 405.87
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "bear_steepener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": -66602.05,
+    "pnl_convexity_adjusted": -62615.7,
+    "pnl_exact": -78648.03,
+    "loss_pct": -0.078648,
+    "approximation_error_duration": 12045.98,
+    "approximation_error_convexity": 16032.32,
+    "key_rate_pnl": {
+      "2Y": -751.39,
+      "5Y": -6174.62,
+      "10Y": -34941.32,
+      "30Y": -44506.69
+    },
+    "attribution": {
+      "duration": -66602.05,
+      "convexity": 3986.35,
+      "curve_shape": -20951.09,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 4918.76
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "bull_flattener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": 57968.45,
+    "pnl_convexity_adjusted": 60988.29,
+    "pnl_exact": 38103.31,
+    "loss_pct": 0.038103,
+    "approximation_error_duration": 19865.15,
+    "approximation_error_convexity": 22884.98,
+    "key_rate_pnl": {
+      "2Y": 3005.57,
+      "5Y": 9261.93,
+      "10Y": 16442.97,
+      "30Y": 8092.13
+    },
+    "attribution": {
+      "duration": 57968.45,
+      "convexity": 3019.84,
+      "curve_shape": -20139.59,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -2745.39
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "front_end_repricing",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": -51801.6,
+    "pnl_convexity_adjusted": -49390.1,
+    "pnl_exact": -26583.28,
+    "loss_pct": -0.026583,
+    "approximation_error_duration": -25218.32,
+    "approximation_error_convexity": -22806.82,
+    "key_rate_pnl": {
+      "2Y": -3005.57,
+      "5Y": -9261.93,
+      "10Y": -10276.86,
+      "30Y": -4046.06
+    },
+    "attribution": {
+      "duration": -51801.6,
+      "convexity": 2411.49,
+      "curve_shape": 24294.09,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -1487.27
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "long_end_premium",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": -57968.45,
+    "pnl_convexity_adjusted": -54948.62,
+    "pnl_exact": -75878.78,
+    "loss_pct": -0.075879,
+    "approximation_error_duration": 17910.33,
+    "approximation_error_convexity": 20930.17,
+    "key_rate_pnl": {
+      "2Y": -300.56,
+      "5Y": -3087.31,
+      "10Y": -30830.58,
+      "30Y": -50575.79
+    },
+    "attribution": {
+      "duration": -57968.45,
+      "convexity": 3019.84,
+      "curve_shape": -27852.04,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 6921.88
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "real_rate_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": -65368.68,
+    "pnl_convexity_adjusted": -61528.61,
+    "pnl_exact": -66508.53,
+    "loss_pct": -0.066509,
+    "approximation_error_duration": 1139.85,
+    "approximation_error_convexity": 4979.92,
+    "key_rate_pnl": {
+      "2Y": -1502.78,
+      "5Y": -8027.01,
+      "10Y": -30830.58,
+      "30Y": -30345.47
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 3840.07,
+      "curve_shape": -6494.44,
+      "real_rate": -65368.68,
+      "breakeven": 0.0,
+      "residual": 1514.52
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "breakeven_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": -29600.91,
+    "pnl_convexity_adjusted": -28813.49,
+    "pnl_exact": -27718.17,
+    "loss_pct": -0.027718,
+    "approximation_error_duration": -1882.74,
+    "approximation_error_convexity": -1095.31,
+    "key_rate_pnl": {
+      "2Y": -751.39,
+      "5Y": -4939.7,
+      "10Y": -14387.6,
+      "30Y": -8092.13
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 787.43,
+      "curve_shape": 906.05,
+      "real_rate": 0.0,
+      "breakeven": -29600.91,
+      "residual": 189.27
+    }
+  },
+  {
+    "portfolio_id": "long_duration_hedge_book",
+    "scenario_id": "replay_2022",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 9.867,
+    "convexity": 174.9837,
+    "dv01": 986.7,
+    "key_rate_dv01": {
+      "2Y": 30.06,
+      "5Y": 123.49,
+      "10Y": 411.07,
+      "30Y": 404.61
+    },
+    "pnl_duration_only": -267394.91,
+    "pnl_convexity_adjusted": -203140.01,
+    "pnl_exact": -191633.96,
+    "loss_pct": -0.191634,
+    "approximation_error_duration": -75760.95,
+    "approximation_error_convexity": -11506.05,
+    "key_rate_pnl": {
+      "2Y": -11060.49,
+      "5Y": -33713.43,
+      "10Y": -97013.55,
+      "30Y": -83753.51
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 64254.9,
+      "curve_shape": 37120.02,
+      "real_rate": -278010.49,
+      "breakeven": 10615.58,
+      "residual": -25613.97
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "current_snapshot",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": 0.0,
+    "pnl_convexity_adjusted": 0.0,
+    "pnl_exact": 0.0,
+    "loss_pct": 0.0,
+    "approximation_error_duration": 0.0,
+    "approximation_error_convexity": 0.0,
+    "key_rate_pnl": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "parallel_50",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -32507.59,
+    "pnl_convexity_adjusted": -31589.46,
+    "pnl_exact": -31546.28,
+    "loss_pct": -0.031546,
+    "approximation_error_duration": -961.31,
+    "approximation_error_convexity": -43.18,
+    "key_rate_pnl": {
+      "2Y": -1908.89,
+      "5Y": -5077.77,
+      "10Y": -20216.89,
+      "30Y": -5057.58
+    },
+    "attribution": {
+      "duration": -20701.63,
+      "convexity": 918.13,
+      "curve_shape": -98.05,
+      "real_rate": -11805.95,
+      "breakeven": 0.0,
+      "residual": 141.23
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "parallel_100",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -65015.17,
+    "pnl_convexity_adjusted": -61342.66,
+    "pnl_exact": -61424.41,
+    "loss_pct": -0.061424,
+    "approximation_error_duration": -3590.76,
+    "approximation_error_convexity": 81.75,
+    "key_rate_pnl": {
+      "2Y": -3817.79,
+      "5Y": -10155.54,
+      "10Y": -40433.78,
+      "30Y": -10115.16
+    },
+    "attribution": {
+      "duration": -41403.26,
+      "convexity": 3672.51,
+      "curve_shape": -196.11,
+      "real_rate": -23611.91,
+      "breakeven": 0.0,
+      "residual": 114.36
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "bear_steepener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -44012.71,
+    "pnl_convexity_adjusted": -42332.9,
+    "pnl_exact": -48715.71,
+    "loss_pct": -0.048716,
+    "approximation_error_duration": 4703.0,
+    "approximation_error_convexity": 6382.82,
+    "key_rate_pnl": {
+      "2Y": -954.45,
+      "5Y": -5077.77,
+      "10Y": -34368.71,
+      "30Y": -11126.67
+    },
+    "attribution": {
+      "duration": -27947.2,
+      "convexity": 1679.82,
+      "curve_shape": -7980.16,
+      "real_rate": -16065.51,
+      "breakeven": 0.0,
+      "residual": 1597.35
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "bull_flattener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": 38075.8,
+    "pnl_convexity_adjusted": 39338.06,
+    "pnl_exact": 30508.7,
+    "loss_pct": 0.030509,
+    "approximation_error_duration": 7567.1,
+    "approximation_error_convexity": 8829.36,
+    "key_rate_pnl": {
+      "2Y": 3817.79,
+      "5Y": 7616.66,
+      "10Y": 16173.51,
+      "30Y": 2023.03
+    },
+    "attribution": {
+      "duration": 24324.42,
+      "convexity": 1262.26,
+      "curve_shape": -8040.2,
+      "real_rate": 13751.39,
+      "breakeven": 0.0,
+      "residual": -789.16
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "front_end_repricing",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -33989.8,
+    "pnl_convexity_adjusted": -32983.21,
+    "pnl_exact": -22535.09,
+    "loss_pct": -0.022535,
+    "approximation_error_duration": -11454.71,
+    "approximation_error_convexity": -10448.12,
+    "key_rate_pnl": {
+      "2Y": -3817.79,
+      "5Y": -7616.66,
+      "10Y": -10108.44,
+      "30Y": -1011.52
+    },
+    "attribution": {
+      "duration": -21736.71,
+      "convexity": 1006.59,
+      "curve_shape": 11073.88,
+      "real_rate": -12253.09,
+      "breakeven": 0.0,
+      "residual": -625.76
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "long_end_premium",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -38373.89,
+    "pnl_convexity_adjusted": -37098.37,
+    "pnl_exact": -42984.62,
+    "loss_pct": -0.042985,
+    "approximation_error_duration": 4610.73,
+    "approximation_error_convexity": 5886.25,
+    "key_rate_pnl": {
+      "2Y": -381.78,
+      "5Y": -2538.89,
+      "10Y": -30325.33,
+      "30Y": -12643.95
+    },
+    "attribution": {
+      "duration": -24324.42,
+      "convexity": 1275.52,
+      "curve_shape": -7921.11,
+      "real_rate": -14049.48,
+      "breakeven": 0.0,
+      "residual": 2034.86
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "real_rate_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -48217.55,
+    "pnl_convexity_adjusted": -46305.75,
+    "pnl_exact": -49957.57,
+    "loss_pct": -0.049958,
+    "approximation_error_duration": 1740.02,
+    "approximation_error_convexity": 3651.82,
+    "key_rate_pnl": {
+      "2Y": -1908.89,
+      "5Y": -6929.57,
+      "10Y": -35615.01,
+      "30Y": -7586.37
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 1911.8,
+      "curve_shape": -4286.51,
+      "real_rate": -48217.55,
+      "breakeven": 0.0,
+      "residual": 634.69
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "breakeven_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -12420.98,
+    "pnl_convexity_adjusted": -12170.74,
+    "pnl_exact": -12661.66,
+    "loss_pct": -0.012662,
+    "approximation_error_duration": 240.68,
+    "approximation_error_convexity": 490.92,
+    "key_rate_pnl": {
+      "2Y": -954.45,
+      "5Y": -3486.91,
+      "10Y": -6334.85,
+      "30Y": -2023.03
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 250.24,
+      "curve_shape": -574.3,
+      "real_rate": 0.0,
+      "breakeven": -12420.98,
+      "residual": 83.38
+    }
+  },
+  {
+    "portfolio_id": "inflation_sensitive_book",
+    "scenario_id": "replay_2022",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 7.2781,
+    "convexity": 87.1166,
+    "dv01": 727.81,
+    "key_rate_dv01": {
+      "2Y": 38.18,
+      "5Y": 106.61,
+      "10Y": 474.87,
+      "30Y": 101.15
+    },
+    "pnl_duration_only": -200610.22,
+    "pnl_convexity_adjusted": -167684.47,
+    "pnl_exact": -163446.47,
+    "loss_pct": -0.163446,
+    "approximation_error_duration": -37163.75,
+    "approximation_error_convexity": -4238.0,
+    "key_rate_pnl": {
+      "2Y": -14049.47,
+      "5Y": -30153.76,
+      "10Y": -119709.22,
+      "30Y": -20938.38
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 32925.75,
+      "curve_shape": 13855.42,
+      "real_rate": -205064.67,
+      "breakeven": 4454.45,
+      "residual": -9617.42
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "current_snapshot",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": 0.0,
+    "pnl_convexity_adjusted": 0.0,
+    "pnl_exact": 0.0,
+    "loss_pct": 0.0,
+    "approximation_error_duration": 0.0,
+    "approximation_error_convexity": 0.0,
+    "key_rate_pnl": {
+      "2Y": 0.0,
+      "5Y": 0.0,
+      "10Y": 0.0,
+      "30Y": 0.0
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 0.0,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 0.0
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "parallel_50",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": -43249.89,
+    "pnl_convexity_adjusted": -41099.08,
+    "pnl_exact": -40561.75,
+    "loss_pct": -0.040562,
+    "approximation_error_duration": -2688.14,
+    "approximation_error_convexity": -537.33,
+    "key_rate_pnl": {
+      "2Y": -4409.71,
+      "5Y": -2244.48,
+      "10Y": -12909.95,
+      "30Y": -22759.1
+    },
+    "attribution": {
+      "duration": -43249.89,
+      "convexity": 2150.81,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 537.33
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "parallel_100",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": -86499.78,
+    "pnl_convexity_adjusted": -77896.54,
+    "pnl_exact": -77438.31,
+    "loss_pct": -0.077438,
+    "approximation_error_duration": -9061.47,
+    "approximation_error_convexity": -458.23,
+    "key_rate_pnl": {
+      "2Y": -8819.42,
+      "5Y": -4488.96,
+      "10Y": -25819.9,
+      "30Y": -45518.21
+    },
+    "attribution": {
+      "duration": -86499.78,
+      "convexity": 8603.24,
+      "curve_shape": 0.0,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 458.23
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "bear_steepener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": -58387.35,
+    "pnl_convexity_adjusted": -54467.5,
+    "pnl_exact": -68534.78,
+    "loss_pct": -0.068535,
+    "approximation_error_duration": 10147.43,
+    "approximation_error_convexity": 14067.29,
+    "key_rate_pnl": {
+      "2Y": -2204.85,
+      "5Y": -2244.48,
+      "10Y": -21946.91,
+      "30Y": -50070.03
+    },
+    "attribution": {
+      "duration": -58387.35,
+      "convexity": 3919.85,
+      "curve_shape": -19329.9,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 5262.61
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "bull_flattener",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": 50818.62,
+    "pnl_convexity_adjusted": 53788.08,
+    "pnl_exact": 32765.47,
+    "loss_pct": 0.032765,
+    "approximation_error_duration": 18053.15,
+    "approximation_error_convexity": 21022.61,
+    "key_rate_pnl": {
+      "2Y": 8819.42,
+      "5Y": 3366.72,
+      "10Y": 10327.96,
+      "30Y": 9103.64
+    },
+    "attribution": {
+      "duration": 50818.62,
+      "convexity": 2969.46,
+      "curve_shape": -18112.07,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -2910.54
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "front_end_repricing",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": -45412.38,
+    "pnl_convexity_adjusted": -43041.11,
+    "pnl_exact": -23265.7,
+    "loss_pct": -0.023266,
+    "approximation_error_duration": -22146.68,
+    "approximation_error_convexity": -19775.41,
+    "key_rate_pnl": {
+      "2Y": -8819.42,
+      "5Y": -3366.72,
+      "10Y": -6454.97,
+      "30Y": -4551.82
+    },
+    "attribution": {
+      "duration": -45412.38,
+      "convexity": 2371.27,
+      "curve_shape": 21246.47,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": -1471.06
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "long_end_premium",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": -50818.62,
+    "pnl_convexity_adjusted": -47849.16,
+    "pnl_exact": -68800.54,
+    "loss_pct": -0.068801,
+    "approximation_error_duration": 17981.92,
+    "approximation_error_convexity": 20951.39,
+    "key_rate_pnl": {
+      "2Y": -881.94,
+      "5Y": -1122.24,
+      "10Y": -19364.92,
+      "30Y": -56897.76
+    },
+    "attribution": {
+      "duration": -50818.62,
+      "convexity": 2969.46,
+      "curve_shape": -28537.06,
+      "real_rate": 0.0,
+      "breakeven": 0.0,
+      "residual": 7585.67
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "real_rate_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": -57306.1,
+    "pnl_convexity_adjusted": -53530.09,
+    "pnl_exact": -56732.51,
+    "loss_pct": -0.056733,
+    "approximation_error_duration": -573.59,
+    "approximation_error_convexity": 3202.43,
+    "key_rate_pnl": {
+      "2Y": -4409.71,
+      "5Y": -2917.83,
+      "10Y": -19364.92,
+      "30Y": -34138.66
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 3776.02,
+      "curve_shape": -4752.82,
+      "real_rate": -57306.1,
+      "breakeven": 0.0,
+      "residual": 1550.39
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "breakeven_shock",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": -25949.93,
+    "pnl_convexity_adjusted": -25175.64,
+    "pnl_exact": -21775.98,
+    "loss_pct": -0.021776,
+    "approximation_error_duration": -4173.95,
+    "approximation_error_convexity": -3399.66,
+    "key_rate_pnl": {
+      "2Y": -2204.85,
+      "5Y": -1795.59,
+      "10Y": -9036.96,
+      "30Y": -9103.64
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 774.29,
+      "curve_shape": 3252.9,
+      "real_rate": 0.0,
+      "breakeven": -25949.93,
+      "residual": 146.76
+    }
+  },
+  {
+    "portfolio_id": "barbell_treasury_book",
+    "scenario_id": "replay_2022",
+    "base_portfolio_value": 1000000.0,
+    "duration_modified": 8.65,
+    "convexity": 172.0648,
+    "dv01": 865.0,
+    "key_rate_dv01": {
+      "2Y": 88.19,
+      "5Y": 44.89,
+      "10Y": 258.2,
+      "30Y": 455.18
+    },
+    "pnl_duration_only": -234414.4,
+    "pnl_convexity_adjusted": -171231.33,
+    "pnl_exact": -167828.36,
+    "loss_pct": -0.167828,
+    "approximation_error_duration": -66586.04,
+    "approximation_error_convexity": -3402.97,
+    "key_rate_pnl": {
+      "2Y": -32455.46,
+      "5Y": -12254.87,
+      "10Y": -60934.95,
+      "30Y": -94222.69
+    },
+    "attribution": {
+      "duration": 0.0,
+      "convexity": 63183.07,
+      "curve_shape": 29524.0,
+      "real_rate": -243720.65,
+      "breakeven": 9306.25,
+      "residual": -26121.04
+    }
+  }
+]

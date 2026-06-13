@@ -1,0 +1,28 @@
+{
+  "as_of_date": "2026-06-30",
+  "calibration_window": {
+    "start_date": "2015-01-31",
+    "end_date": "2026-06-30"
+  },
+  "short_rate_proxy": "DGS3MO",
+  "sampling": "month-end, dt = 1/12",
+  "vasicek": {
+    "a": 0.0781,
+    "b": 0.0635,
+    "sigma": 0.0067,
+    "r0": 0.0378
+  },
+  "cir": {
+    "a": 0.05,
+    "b": 0.0506,
+    "sigma": 0.0664,
+    "feller_condition": true,
+    "feller_value_2ab": 0.005065,
+    "sigma_squared": 0.004413,
+    "r0": 0.0378
+  },
+  "calibration_notes": [
+    "a: -0.0360 -> [0.05, 3.0]",
+    "AR(1) beta is near 1 at monthly frequency, so mean reversion is slow and the long-run mean b is weakly identified; treat (a, b) jointly, not as point forecasts."
+  ]
+}
