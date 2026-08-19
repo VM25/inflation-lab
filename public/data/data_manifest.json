@@ -1,9 +1,9 @@
 {
   "project": "Inflation Regime Rates Risk Engine",
-  "generated_at": "2026-06-12T17:54:48",
+  "generated_at": "2026-08-19T17:12:32",
   "data_as_of": {
-    "rates": "2026-06-11",
-    "inflation": "2026-05-01"
+    "rates": "2026-08-18",
+    "inflation": "2026-07-01"
   },
   "files": [
     {
