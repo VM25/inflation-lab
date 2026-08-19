@@ -1,0 +1,4 @@
+# Python dependencies for the research pipeline (research/scripts/).
+# Pinned to major versions that reproduce the committed outputs bit-for-bit.
+numpy>=2.0,<3
+pandas>=2.2,<4

@@ -86,7 +86,10 @@ export function Hook() {
             >
               Follow the chain
             </a>
-            <p className="t-note">public market data through {snapshot.as_of_date}</p>
+            <p className="t-note">
+              rates through {snapshot.as_of_date} · CPI through{" "}
+              {snapshot.inflation.latest_cpi_date.slice(0, 7)}
+            </p>
           </motion.div>
         </div>
 

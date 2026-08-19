@@ -9,7 +9,7 @@ import {
 import { Claim } from "@/components/chain/bits";
 import { ChainStep } from "@/components/chain/ChainStep";
 import { useDesk } from "@/components/DeskContext";
-import { fmtDate } from "@/lib/formatters/numberFormatters";
+import { fmtDate, fmtMonthYear } from "@/lib/formatters/numberFormatters";
 
 const NOTES: { title: string; body: string }[] = [
   {
@@ -69,7 +69,8 @@ export function NotesStep() {
             </AccordionTrigger>
             <AccordionContent className="pb-4">
               <p className="t-note mb-2">
-                rates {manifest.data_as_of.rates}, CPI {manifest.data_as_of.inflation}
+                daily rates through {manifest.data_as_of.rates} · monthly CPI
+                through {manifest.data_as_of.inflation.slice(0, 7)}
               </p>
               <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2">
                 {manifest.files.map((f) => (
@@ -88,7 +89,10 @@ export function NotesStep() {
         <div className="flex flex-wrap items-start justify-between gap-3">
           <p className="t-display text-[15px] text-ink">Rates Risk Engine</p>
           <div className="text-right">
-            <p className="t-note">data as of {fmtDate(snapshot.as_of_date)}</p>
+            <p className="t-note">
+              rates through {fmtDate(snapshot.as_of_date)} · CPI through{" "}
+              {fmtMonthYear(snapshot.inflation.latest_cpi_date)}
+            </p>
             <a
               href="https://github.com/VM25/inflation-lab"
               target="_blank"

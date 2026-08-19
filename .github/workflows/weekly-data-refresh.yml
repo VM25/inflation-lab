@@ -1,0 +1,230 @@
+# Weekly refresh of the Rates Risk Engine.
+#
+# Saturday morning UTC, comfortably after the U.S. Friday session has settled
+# and FRED has published Friday's daily H.15 constant-maturity series. The job
+# re-runs the *existing* research pipeline against newly available public data,
+# revalidates every quantitative invariant, rebuilds the production frontend,
+# and commits only when real observations moved. Netlify's existing Git
+# integration picks the commit up and redeploys.
+#
+# Nothing here changes the research methodology. A failed refresh commits
+# nothing and leaves the deployed site untouched.
+
+name: Weekly data refresh
+
+on:
+  schedule:
+    # 11:23 UTC every Saturday (07:23 ET) — off-peak minute, well after
+    # Friday's daily rate series are published.
+    - cron: "23 11 * * 6"
+  workflow_dispatch:
+
+concurrency:
+  group: weekly-data-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  refresh:
+    name: Refresh, validate and publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: research/requirements.txt
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install Python dependencies
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          python -m pip install -r research/requirements.txt
+          python -c "import numpy, pandas; print('numpy', numpy.__version__, 'pandas', pandas.__version__)"
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Snapshot the currently committed data tree
+        run: |
+          set -euo pipefail
+          rm -rf "$RUNNER_TEMP/baseline"
+          cp -r data "$RUNNER_TEMP/baseline"
+          echo "baseline saved to $RUNNER_TEMP/baseline"
+
+      - name: Pre-flight — upstream reachability
+        run: |
+          set -euo pipefail
+          url="https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10&cosd=2026-01-01"
+          for attempt in 1 2 3 4 5; do
+            if curl -sSf --max-time 60 "$url" -o /tmp/fred_probe.csv; then
+              rows=$(wc -l < /tmp/fred_probe.csv)
+              if [ "$rows" -gt 1 ]; then
+                echo "FRED reachable (probe returned $rows lines)"
+                exit 0
+              fi
+              echo "probe returned an empty series; retrying"
+            fi
+            echo "attempt $attempt failed; backing off"
+            sleep $((attempt * 30))
+          done
+          echo "::error::FRED is unreachable or rate-limiting; aborting before any data is touched."
+          exit 1
+
+      # Deliberately NOT --skip-fetch: the whole point of the scheduled run is
+      # to extend the public-data sample. One retry absorbs transient FRED
+      # throttling or a mid-fetch outage; the pipeline is idempotent.
+      - name: Run the research pipeline
+        run: |
+          set -euo pipefail
+          for attempt in 1 2; do
+            if python research/scripts/run_pipeline.py; then
+              exit 0
+            fi
+            echo "::warning::pipeline attempt $attempt failed"
+            if [ "$attempt" -eq 1 ]; then
+              echo "restoring the committed data tree and retrying in 120s"
+              git checkout -- data/raw data/processed public/data
+              git clean -fd -- data/raw data/processed public/data
+              sleep 120
+            fi
+          done
+          echo "::error::Research pipeline failed twice; nothing will be committed."
+          exit 1
+
+      - name: Sanity-check gate
+        run: python research/scripts/sanity_checks.py
+
+      - name: Quantitative reconciliation audit
+        run: python research/scripts/quant_audit.py
+
+      - name: Data-refresh integrity gate
+        run: |
+          python research/scripts/refresh_guard.py \
+            --baseline-dir "$RUNNER_TEMP/baseline"
+
+      - name: Production frontend build
+        run: npm run build
+
+      - name: Inspect the complete diff
+        run: |
+          set -euo pipefail
+          echo "### Working tree status" >> "$GITHUB_STEP_SUMMARY"
+          git status --porcelain --untracked-files=all
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          git status --porcelain --untracked-files=all >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          echo "### Diffstat" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          git diff --stat >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          git diff --stat
+
+      - name: Classify the changeset
+        id: changeset
+        run: python research/scripts/refresh_changeset.py
+
+      - name: Resolve commit identity
+        if: steps.changeset.outputs.changed == 'true'
+        id: identity
+        env:
+          # Optional override. Set the repository variable GIT_COMMIT_EMAIL to
+          # the GitHub-verified address (or the VM25 noreply address) if the
+          # repository history ever stops being the source of truth.
+          OVERRIDE_EMAIL: ${{ vars.GIT_COMMIT_EMAIL }}
+        run: |
+          set -euo pipefail
+          name="Vatsal Maniar"
+          email="${OVERRIDE_EMAIL:-}"
+          if [ -z "$email" ]; then
+            # Read the account-associated address straight out of this
+            # repository's own history rather than guessing one.
+            email=$(git log --format='%an%x09%ae' \
+                    | awk -F'\t' -v n="$name" '$1 == n { print $2; exit }')
+          fi
+          if [ -z "$email" ]; then
+            echo "::error::Could not determine the commit email for '$name'. Set the repository variable GIT_COMMIT_EMAIL."
+            exit 1
+          fi
+          case "$email" in
+            *"[bot]"*|*"actions@github.com"*)
+              echo "::error::Resolved a bot address ($email); refusing. Set GIT_COMMIT_EMAIL."
+              exit 1
+              ;;
+          esac
+          echo "commit identity: $name <$email>"
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+          echo "email=$email" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push the refresh
+        if: steps.changeset.outputs.changed == 'true'
+        env:
+          GIT_AUTHOR_NAME: ${{ steps.identity.outputs.name }}
+          GIT_AUTHOR_EMAIL: ${{ steps.identity.outputs.email }}
+          GIT_COMMITTER_NAME: ${{ steps.identity.outputs.name }}
+          GIT_COMMITTER_EMAIL: ${{ steps.identity.outputs.email }}
+          COMMIT_MESSAGE: ${{ steps.changeset.outputs.commit_message }}
+          RATES_AS_OF: ${{ steps.changeset.outputs.rates_as_of }}
+          CPI_AS_OF: ${{ steps.changeset.outputs.cpi_as_of }}
+        run: |
+          set -euo pipefail
+
+          # Stage generated data only — never build output or environment files.
+          git add -A -- data/raw data/processed public/data
+          staged=$(git diff --cached --name-only)
+          if [ -z "$staged" ]; then
+            echo "::error::changeset reported a change but nothing staged."
+            exit 1
+          fi
+          if echo "$staged" | grep -vE '^(data/raw/|data/processed/|public/data/)' ; then
+            echo "::error::refusing to commit paths outside the generated data directories."
+            exit 1
+          fi
+
+          git commit \
+            -m "$COMMIT_MESSAGE" \
+            -m "Regenerated by research/scripts/run_pipeline.py from newly published FRED observations: curves, market snapshot, synthetic instruments, bond analytics, scenarios, hedge overlays, attribution, Vasicek/CIR calibration and VaR/ES. Rates through ${RATES_AS_OF}; CPI through ${CPI_AS_OF}."
+
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main
+            if git push origin HEAD:main; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "::warning::push attempt $attempt failed; retrying"
+            sleep $((attempt * 15))
+          done
+          echo "::error::Could not push the refresh to main."
+          exit 1
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### Refresh result"
+            echo ""
+            echo "- rates through: \`${{ steps.changeset.outputs.rates_as_of }}\`"
+            echo "- CPI through: \`${{ steps.changeset.outputs.cpi_as_of }}\`"
+            echo "- committed: \`${{ steps.changeset.outputs.changed }}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
