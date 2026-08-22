@@ -51,7 +51,7 @@
     },
     "real_share_parallel": 0.7425,
     "macro_interpretation": "Tests baseline duration sensitivity under a uniform rate increase.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-18 to 2026-08-18; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "parallel_100",
@@ -78,7 +78,7 @@
     },
     "real_share_parallel": 0.7425,
     "macro_interpretation": "A larger uniform shock that exposes convexity and approximation error.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-18 to 2026-08-18; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "bear_steepener",
@@ -105,7 +105,7 @@
     },
     "real_share_parallel": 0.7485,
     "macro_interpretation": "Punishes 10Y/30Y key-rate exposure; total duration alone understates the risk.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-18 to 2026-08-18; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "bull_flattener",
@@ -132,7 +132,7 @@
     },
     "real_share_parallel": 0.7362,
     "macro_interpretation": "A rally led by policy-rate repricing; front-end exposure gains most.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-18 to 2026-08-18; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "front_end_repricing",
@@ -159,7 +159,7 @@
     },
     "real_share_parallel": 0.7343,
     "macro_interpretation": "Tests short/intermediate books; long-duration books are less affected.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-18 to 2026-08-18; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "long_end_premium",
@@ -186,7 +186,7 @@
     },
     "real_share_parallel": 0.7519,
     "macro_interpretation": "Concentrated long-end losses with visible convexity effects.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-18 to 2026-08-18; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "real_rate_shock",
