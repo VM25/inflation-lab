@@ -38,20 +38,20 @@
       "30Y": 50.0
     },
     "real_shocks_bps": {
-      "2Y": 36.5,
-      "5Y": 36.5,
+      "2Y": 36.0,
+      "5Y": 36.0,
       "10Y": 37.5,
       "30Y": 38.0
     },
     "breakeven_shocks_bps": {
-      "2Y": 13.5,
-      "5Y": 13.5,
+      "2Y": 14.0,
+      "5Y": 14.0,
       "10Y": 12.5,
       "30Y": 12.0
     },
-    "real_share_parallel": 0.7425,
+    "real_share_parallel": 0.7375,
     "macro_interpretation": "Tests baseline duration sensitivity under a uniform rate increase.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-28 to 2026-08-27; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "parallel_100",
@@ -65,20 +65,20 @@
       "30Y": 100.0
     },
     "real_shocks_bps": {
-      "2Y": 73.0,
-      "5Y": 73.0,
+      "2Y": 72.0,
+      "5Y": 72.0,
       "10Y": 75.0,
       "30Y": 76.0
     },
     "breakeven_shocks_bps": {
-      "2Y": 27.0,
-      "5Y": 27.0,
+      "2Y": 28.0,
+      "5Y": 28.0,
       "10Y": 25.0,
       "30Y": 24.0
     },
-    "real_share_parallel": 0.7425,
+    "real_share_parallel": 0.7375,
     "macro_interpretation": "A larger uniform shock that exposes convexity and approximation error.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-28 to 2026-08-27; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "bear_steepener",
@@ -92,20 +92,20 @@
       "30Y": 110.0
     },
     "real_shocks_bps": {
-      "2Y": 18.2,
-      "5Y": 36.5,
+      "2Y": 18.0,
+      "5Y": 36.0,
       "10Y": 63.8,
       "30Y": 83.6
     },
     "breakeven_shocks_bps": {
-      "2Y": 6.8,
-      "5Y": 13.5,
+      "2Y": 7.0,
+      "5Y": 14.0,
       "10Y": 21.2,
       "30Y": 26.4
     },
-    "real_share_parallel": 0.7485,
+    "real_share_parallel": 0.7459,
     "macro_interpretation": "Punishes 10Y/30Y key-rate exposure; total duration alone understates the risk.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-28 to 2026-08-27; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "bull_flattener",
@@ -119,20 +119,20 @@
       "30Y": -20.0
     },
     "real_shocks_bps": {
-      "2Y": -73.0,
-      "5Y": -54.8,
+      "2Y": -72.0,
+      "5Y": -54.0,
       "10Y": -30.0,
       "30Y": -15.2
     },
     "breakeven_shocks_bps": {
-      "2Y": -27.0,
-      "5Y": -20.2,
+      "2Y": -28.0,
+      "5Y": -21.0,
       "10Y": -10.0,
       "30Y": -4.8
     },
-    "real_share_parallel": 0.7362,
+    "real_share_parallel": 0.7285,
     "macro_interpretation": "A rally led by policy-rate repricing; front-end exposure gains most.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-28 to 2026-08-27; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "front_end_repricing",
@@ -146,20 +146,20 @@
       "30Y": 10.0
     },
     "real_shocks_bps": {
-      "2Y": 73.0,
-      "5Y": 54.8,
+      "2Y": 72.0,
+      "5Y": 54.0,
       "10Y": 18.8,
       "30Y": 7.6
     },
     "breakeven_shocks_bps": {
-      "2Y": 27.0,
-      "5Y": 20.2,
+      "2Y": 28.0,
+      "5Y": 21.0,
       "10Y": 6.2,
       "30Y": 2.4
     },
-    "real_share_parallel": 0.7343,
+    "real_share_parallel": 0.7257,
     "macro_interpretation": "Tests short/intermediate books; long-duration books are less affected.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-28 to 2026-08-27; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "long_end_premium",
@@ -173,20 +173,20 @@
       "30Y": 125.0
     },
     "real_shocks_bps": {
-      "2Y": 7.3,
-      "5Y": 18.2,
+      "2Y": 7.2,
+      "5Y": 18.0,
       "10Y": 56.2,
       "30Y": 95.0
     },
     "breakeven_shocks_bps": {
-      "2Y": 2.7,
-      "5Y": 6.8,
+      "2Y": 2.8,
+      "5Y": 7.0,
       "10Y": 18.8,
       "30Y": 30.0
     },
-    "real_share_parallel": 0.7519,
+    "real_share_parallel": 0.7506,
     "macro_interpretation": "Concentrated long-end losses with visible convexity effects.",
-    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-21 to 2026-08-20; 2Y borrows the 5Y beta"
+    "split_basis": "per-tenor beta of daily real vs nominal yield changes, 2023-08-28 to 2026-08-27; 2Y borrows the 5Y beta"
   },
   {
     "scenario_id": "real_rate_shock",

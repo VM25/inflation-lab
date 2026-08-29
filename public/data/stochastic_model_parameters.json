@@ -7,22 +7,22 @@
   "short_rate_proxy": "DGS3MO",
   "sampling": "month-end, dt = 1/12",
   "vasicek": {
-    "a": 0.0762,
-    "b": 0.0652,
+    "a": 0.0773,
+    "b": 0.0642,
     "sigma": 0.0067,
-    "r0": 0.0387
+    "r0": 0.0384
   },
   "cir": {
     "a": 0.05,
-    "b": 0.0506,
+    "b": 0.0507,
     "sigma": 0.066,
     "feller_condition": true,
-    "feller_value_2ab": 0.005064,
+    "feller_value_2ab": 0.005065,
     "sigma_squared": 0.004354,
-    "r0": 0.0387
+    "r0": 0.0384
   },
   "calibration_notes": [
-    "a: -0.0370 -> [0.05, 3.0]",
+    "a: -0.0358 -> [0.05, 3.0]",
     "AR(1) beta is near 1 at monthly frequency, so mean reversion is slow and the long-run mean b is weakly identified; treat (a, b) jointly, not as point forecasts."
   ]
 }
