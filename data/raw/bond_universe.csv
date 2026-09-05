@@ -1,7 +1,7 @@
 instrument_id,name,sleeve,type,maturity_years,coupon_rate,face_value,coupon_frequency,curve_tenor,is_tips_style
 CASH,Cash / Ultra-Short Bill,cash,cash,0.25,0.0,100,1,3M,False
-UST_2Y,2Y Treasury Proxy,short_treasury,nominal,2.0,0.0425,100,2,2Y,False
-UST_5Y,5Y Treasury Proxy,intermediate_treasury,nominal,5.0,0.04375,100,2,5Y,False
-UST_10Y,10Y Treasury Proxy,long_intermediate_treasury,nominal,10.0,0.04625,100,2,10Y,False
+UST_2Y,2Y Treasury Proxy,short_treasury,nominal,2.0,0.04375,100,2,2Y,False
+UST_5Y,5Y Treasury Proxy,intermediate_treasury,nominal,5.0,0.045,100,2,5Y,False
+UST_10Y,10Y Treasury Proxy,long_intermediate_treasury,nominal,10.0,0.0475,100,2,10Y,False
 UST_30Y,30Y Treasury Proxy,long_treasury,nominal,30.0,0.0525,100,2,30Y,False
 TIPS_10Y,10Y TIPS-Style Proxy,tips_style,real,10.0,0.02375,100,2,10Y,True
