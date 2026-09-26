@@ -1,24 +1,24 @@
 {
-  "as_of_date": "2026-09-10",
+  "as_of_date": "2026-09-24",
   "data_window": {
     "start_date": "2015-01-02",
-    "end_date": "2026-09-10"
+    "end_date": "2026-09-24"
   },
   "nominal_curve": {
-    "2Y": 0.0456,
-    "5Y": 0.0475,
-    "10Y": 0.0495,
-    "30Y": 0.0537
+    "2Y": 0.0487,
+    "5Y": 0.0503,
+    "10Y": 0.0518,
+    "30Y": 0.0547
   },
-  "short_rate_3m": 0.04,
+  "short_rate_3m": 0.0424,
   "real_yields": {
-    "5Y": 0.0229,
-    "10Y": 0.0255,
-    "30Y": 0.0305
+    "5Y": 0.027,
+    "10Y": 0.0285,
+    "30Y": 0.0321
   },
   "breakevens": {
-    "5Y": 0.0246,
-    "10Y": 0.024
+    "5Y": 0.0233,
+    "10Y": 0.0233
   },
   "inflation": {
     "cpi_yoy": 0.03353,
@@ -26,8 +26,8 @@
     "latest_cpi_date": "2026-08-01"
   },
   "curve_slopes": {
-    "2s10s_bps": 39.0,
-    "5s30s_bps": 62.0
+    "2s10s_bps": 31.0,
+    "5s30s_bps": 44.0
   },
   "regime_label": "Sticky Inflation / Higher-for-Longer",
   "source_notes": [
