@@ -1,7 +1,7 @@
 instrument_id,name,sleeve,type,maturity_years,coupon_rate,face_value,coupon_frequency,curve_tenor,is_tips_style,base_yield,base_price,duration_macaulay,duration_modified,convexity,dv01_per_100_face,krd_2y,krd_5y,krd_10y,krd_30y
-CASH,Cash / Ultra-Short Bill,cash,cash,0.25,0.0,100.0,1,3M,False,0.0428,98.9469,0.25,0.2448,0.1797,0.002422,-0.0,-0.0,-0.0,-0.0
-UST_2Y,2Y Treasury Proxy,short_treasury,nominal,2.0,0.0475,100.0,2,2Y,False,0.047618,99.9778,1.9315,1.8865,4.5526,0.018861,1.8544,-0.0,-0.0,-0.0
-UST_5Y,5Y Treasury Proxy,intermediate_treasury,nominal,5.0,0.04875,100.0,2,5Y,False,0.048977,99.9004,4.4969,4.3894,22.7139,0.04385,0.2399,4.1144,-0.0,-0.0
-UST_10Y,10Y Treasury Proxy,long_intermediate_treasury,nominal,10.0,0.05125,100.0,2,10Y,False,0.050653,100.4639,7.9529,7.7565,73.1104,0.077925,0.2508,0.8376,6.6184,-0.0
-UST_30Y,30Y Treasury Proxy,long_treasury,nominal,30.0,0.05375,100.0,2,30Y,False,0.052919,101.2423,15.3015,14.9071,332.9022,0.150923,0.261,0.8717,4.2165,9.3031
-TIPS_10Y,10Y TIPS-Style Proxy,tips_style,real,10.0,0.0275,100.0,2,10Y,True,0.027642,99.8767,8.8096,8.6895,86.1067,0.086788,0.0,0.6888,7.9907,-0.0
+CASH,Cash / Ultra-Short Bill,cash,cash,0.25,0.0,100.0,1,3M,False,0.0422,98.9614,0.25,0.2448,0.1798,0.002423,-0.0,-0.0,-0.0,-0.0
+UST_2Y,2Y Treasury Proxy,short_treasury,nominal,2.0,0.04625,100.0,2,2Y,False,0.04643,99.9661,1.9332,1.8893,4.5634,0.018887,1.858,-0.0,-0.0,-0.0
+UST_5Y,5Y Treasury Proxy,intermediate_treasury,nominal,5.0,0.0475,100.0,2,5Y,False,0.04769,99.9162,4.5088,4.4038,22.8242,0.044001,0.2346,4.135,-0.0,-0.0
+UST_10Y,10Y Treasury Proxy,long_intermediate_treasury,nominal,10.0,0.05,100.0,2,10Y,False,0.049282,100.5616,7.9961,7.8038,73.7611,0.078476,0.2454,0.8232,6.6872,-0.0
+UST_30Y,30Y Treasury Proxy,long_treasury,nominal,30.0,0.0525,100.0,2,30Y,False,0.051562,101.4239,15.5183,15.1283,340.5586,0.153437,0.2555,0.8571,4.201,9.5628
+TIPS_10Y,10Y TIPS-Style Proxy,tips_style,real,10.0,0.02625,100.0,2,10Y,True,0.026166,100.0738,8.8604,8.746,86.9096,0.087524,0.0,0.6644,8.0686,-0.0
