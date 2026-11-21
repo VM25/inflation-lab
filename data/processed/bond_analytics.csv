@@ -1,7 +1,7 @@
 instrument_id,name,sleeve,type,maturity_years,coupon_rate,face_value,coupon_frequency,curve_tenor,is_tips_style,base_yield,base_price,duration_macaulay,duration_modified,convexity,dv01_per_100_face,krd_2y,krd_5y,krd_10y,krd_30y
-CASH,Cash / Ultra-Short Bill,cash,cash,0.25,0.0,100.0,1,3M,False,0.0432,98.9372,0.25,0.2447,0.1797,0.002421,-0.0,-0.0,-0.0,-0.0
-UST_2Y,2Y Treasury Proxy,short_treasury,nominal,2.0,0.04875,100.0,2,2Y,False,0.048507,100.0458,1.9298,1.8841,4.5433,0.018849,1.8511,-0.0,-0.0,-0.0
-UST_5Y,5Y Treasury Proxy,intermediate_treasury,nominal,5.0,0.05,100.0,2,5Y,False,0.049402,100.2621,4.4862,4.3781,22.6308,0.043896,0.2446,4.0979,-0.0,-0.0
-UST_10Y,10Y Treasury Proxy,long_intermediate_treasury,nominal,10.0,0.05125,100.0,2,10Y,False,0.050727,100.4062,7.9522,7.7555,73.0968,0.07787,0.2504,0.8364,6.6215,-0.0
-UST_30Y,30Y Treasury Proxy,long_treasury,nominal,30.0,0.05375,100.0,2,30Y,False,0.052959,101.1818,15.2973,14.9027,332.7548,0.150788,0.2606,0.8705,4.2184,9.3086
-TIPS_10Y,10Y TIPS-Style Proxy,tips_style,real,10.0,0.02875,100.0,2,10Y,True,0.028419,100.2866,8.7638,8.641,85.4278,0.086658,0.0,0.7146,7.9157,-0.0
+CASH,Cash / Ultra-Short Bill,cash,cash,0.25,0.0,100.0,1,3M,False,0.0434,98.9323,0.25,0.2447,0.1796,0.002421,-0.0,-0.0,-0.0,-0.0
+UST_2Y,2Y Treasury Proxy,short_treasury,nominal,2.0,0.0475,100.0,2,2Y,False,0.047529,99.9944,1.9315,1.8866,4.553,0.018865,1.8546,-0.0,-0.0,-0.0
+UST_5Y,5Y Treasury Proxy,intermediate_treasury,nominal,5.0,0.04875,100.0,2,5Y,False,0.048507,100.1067,4.4975,4.391,22.7284,0.043957,0.2396,4.1167,-0.0,-0.0
+UST_10Y,10Y Treasury Proxy,long_intermediate_treasury,nominal,10.0,0.05,100.0,2,10Y,False,0.050092,99.9284,7.9886,7.7934,73.6118,0.077878,0.2462,0.8242,6.6754,-0.0
+UST_30Y,30Y Treasury Proxy,long_treasury,nominal,30.0,0.05375,100.0,2,30Y,False,0.052533,101.8284,15.3426,14.9499,334.3256,0.152233,0.2597,0.8695,4.224,9.3325
+TIPS_10Y,10Y TIPS-Style Proxy,tips_style,real,10.0,0.02875,100.0,2,10Y,True,0.028602,100.128,8.7626,8.639,85.3972,0.086501,0.0,0.7155,7.9122,-0.0
